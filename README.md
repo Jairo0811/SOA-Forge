@@ -11,6 +11,17 @@ El proyecto sirve como base técnica compartida para dos asignaturas de UNAPEC:
 - **ISO-815 — Integración de Aplicaciones con Tecnología Open Source**
   - Implementación equivalente con componentes open source.
 
+## Equipo académico
+
+| Integrante | Matrícula | ISO-810 | ISO-815 |
+|---|---|:---:|:---:|
+| Enmanueli Alfonso Rondon Marrero | A00115575 | ✅ | ✅ |
+| Francis Jairo Matias Rosario | A00115261 | ✅ | ✅ |
+| Eliandres Rodriguez Cepeda | A00112070 | — | ✅ |
+| Jorge Alexander Minier Terrero | A00105678 | ✅ | ✅ |
+
+> **Nota:** Eliandres Rodriguez Cepeda participa exclusivamente en **ISO-815**.
+
 ## Objetivo
 
 Construir un laboratorio donde varias aplicaciones y servicios independientes se integren a través de una capa de gateway y gobierno, permitiendo comparar un enfoque propietario con una alternativa open source sin duplicar la lógica de negocio.
