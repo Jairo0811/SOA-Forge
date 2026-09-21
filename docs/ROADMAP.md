@@ -5,8 +5,9 @@
 - [x] Separate ISO-810 and ISO-815 academic tracks.
 - [x] Define initial SOA architecture.
 - [x] Establish repository structure.
+- [x] Confirm team members and course participation.
 - [ ] Add final brand assets.
-- [ ] Confirm team members and academic cover data.
+- [ ] Complete remaining academic cover data.
 
 ## Phase 1 — Core Services
 - [ ] Create .NET solution.
