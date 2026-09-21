@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  documentation:
+    name: Documentation integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required project files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f docs/ROADMAP.md
+          test -f src/README.md
+          test -f infrastructure/README.md
+          test -f tests/README.md
+
+      - name: Validate UNAPEC portfolio sections
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -Fq "## 🎓 Información académica" README.md
+          grep -Fq "### 👥 Equipo académico original" README.md
+          grep -Fq "## 🧭 Continuidad académica" README.md
+          grep -Fq "## 🧱 Stack tecnológico" README.md
+          grep -Fq "## 🗺️ Roadmap" README.md
+          grep -Fq "ISO-810" README.md
+          grep -Fq "ISO-815" README.md
