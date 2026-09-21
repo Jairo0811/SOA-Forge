@@ -6,8 +6,8 @@
 - [x] Define initial SOA architecture.
 - [x] Establish repository structure.
 - [x] Confirm team members and course participation.
+- [x] Complete academic cover data.
 - [ ] Add final brand assets.
-- [ ] Complete remaining academic cover data.
 
 ## Phase 1 — Core Services
 - [ ] Create .NET solution.
