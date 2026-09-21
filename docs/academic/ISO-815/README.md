@@ -1,5 +1,14 @@
 # ISO-815 — Integración de Aplicaciones con Tecnología Open Source
 
+## Equipo
+
+- **Enmanueli Alfonso Rondon Marrero** — A00115575
+- **Francis Jairo Matias Rosario** — A00115261
+- **Eliandres Rodriguez Cepeda** — A00112070
+- **Jorge Alexander Minier Terrero** — A00105678
+
+> Eliandres Rodriguez Cepeda participa en SOAForge exclusivamente dentro de **ISO-815**.
+
 ## Enfoque de SOAForge
 
 La línea ISO-815 reutiliza el mismo dominio y los mismos contratos de servicio de SOAForge, pero implementa la infraestructura de integración con componentes open source.
