@@ -1,5 +1,11 @@
 # ISO-810 — Integración de Aplicaciones con Tecnología Propietaria
 
+## Datos académicos
+
+- **Profesor:** Juan Pablo Valdez Reyes
+- **Período académico:** Septiembre - Diciembre 2026
+- **Universidad:** Universidad APEC (UNAPEC)
+
 ## Equipo
 
 - **Enmanueli Alfonso Rondon Marrero** — A00115575
