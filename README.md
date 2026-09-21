@@ -4,12 +4,32 @@
 
 SOAForge es un proyecto académico orientado a demostrar, mediante una implementación funcional, conceptos de **arquitectura orientada a servicios (SOA)**, integración de aplicaciones, gobierno de APIs, seguridad, observabilidad y middleware empresarial.
 
-El proyecto sirve como base técnica compartida para dos asignaturas de UNAPEC:
+## Datos académicos
 
-- **ISO-810 — Integración de Aplicaciones con Tecnología Propietaria**
+- **Universidad:** Universidad APEC (UNAPEC)
+- **Profesor:** Juan Pablo Valdez Reyes
+- **Período académico:** Septiembre - Diciembre 2026
+- **Asignaturas:**
+  - **ISO-810 — Integración de Aplicaciones con Tecnología Propietaria**
+  - **ISO-815 — Integración de Aplicaciones con Tecnología Open Source**
+
+El proyecto sirve como base técnica compartida para ambas asignaturas:
+
+- **ISO-810**
   - Caso académico principal: **Solución Akana SOA**.
-- **ISO-815 — Integración de Aplicaciones con Tecnología Open Source**
+- **ISO-815**
   - Implementación equivalente con componentes open source.
+
+## Equipo académico
+
+| Integrante | Matrícula | ISO-810 | ISO-815 |
+|---|---|:---:|:---:|
+| Enmanueli Alfonso Rondon Marrero | A00115575 | ✅ | ✅ |
+| Francis Jairo Matias Rosario | A00115261 | ✅ | ✅ |
+| Eliandres Rodriguez Cepeda | A00112070 | — | ✅ |
+| Jorge Alexander Minier Terrero | A00105678 | ✅ | ✅ |
+
+> **Nota:** Eliandres Rodriguez Cepeda participa exclusivamente en **ISO-815**.
 
 ## Objetivo
 

@@ -1,0 +1,46 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+*.local
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+TestResults/
+coverage/
+coverage.*
+
+# Logs
+logs/
+*.log
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Secrets / certificates
+*.pfx
+*.p12
+*.key
+*.pem
+secrets/
