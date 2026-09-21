@@ -1,5 +1,13 @@
 # ISO-810 — Integración de Aplicaciones con Tecnología Propietaria
 
+## Equipo
+
+- **Enmanueli Alfonso Rondon Marrero** — A00115575
+- **Francis Jairo Matias Rosario** — A00115261
+- **Jorge Alexander Minier Terrero** — A00105678
+
+> Eliandres Rodriguez Cepeda no forma parte del grupo de ISO-810; su participación en SOAForge corresponde exclusivamente a ISO-815.
+
 ## Enfoque de SOAForge
 
 La línea ISO-810 utiliza **Akana SOA** como caso de estudio de integración empresarial con tecnología propietaria.
