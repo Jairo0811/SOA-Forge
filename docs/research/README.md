@@ -1,22 +1,32 @@
 # Research Index
 
-Esta carpeta concentrará la investigación académica utilizada por las presentaciones de SOAForge.
+La investigación de SOAForge se organiza por **asignatura y parcial**.
 
-## Topics
+## Primer parcial
 
+### ISO-810 — Akana SOA
 - SOA fundamentals
 - BPM fundamentals
-- SOA history and evolution
-- Akana platform research
+- Akana history and evolution
+- Akana modules and components
 - API management and governance
-- Proprietary middleware
-- Open-source integration middleware
-- Enterprise deployment for a 500-user scenario
+- Competitors
+- Enterprise deployment for 500 users
 - Licensing and cost analysis
-- SOA vs microservices
-- SOAP vs REST
-- Security and identity
-- Observability and operational governance
+
+### ISO-815 — BonitaSoft BPM
+- SOA fundamentals
+- BPM fundamentals
+- BonitaSoft history and evolution
+- BonitaSoft modules and components
+- BPM process modeling and execution
+- Competitors
+- Enterprise deployment for 500 users
+- Licensing and cost analysis
+
+## Segundo parcial
+
+Se crearán dos tracks adicionales cuando se conozcan los temas asignados.
 
 ## Research rule
 
