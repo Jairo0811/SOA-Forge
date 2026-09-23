@@ -14,11 +14,15 @@
 
 > Eliandres Rodriguez Cepeda no forma parte del grupo de ISO-810; su participación en SOAForge corresponde exclusivamente a ISO-815.
 
-## Enfoque de SOAForge
+## Modelo de entrega
 
-La línea ISO-810 utiliza **Akana SOA** como caso de estudio de integración empresarial con tecnología propietaria.
+ISO-810 mantiene **su propia presentación por parcial**. No comparte una presentación única con ISO-815.
 
-El enunciado académico del primer parcial asigna al grupo la investigación de **“Solución Akana (Microsot) SOA”** y solicita cubrir:
+### Primer parcial — Akana SOA
+
+El caso asignado para el primer parcial es **Akana SOA**, dentro del enfoque de integración con tecnología propietaria.
+
+La investigación debe cubrir:
 
 1. Introducción al SOA.
 2. Introducción a BPM.
@@ -32,10 +36,12 @@ El enunciado académico del primer parcial asigna al grupo la investigación de 
 10. Costos aproximados para una implementación de 500 usuarios.
 11. Otros aspectos relevantes definidos por el grupo.
 
-## Uso de la demo
+### Demo programada
 
-SOAForge no pretende clonar un producto comercial. El laboratorio implementará conceptos equivalentes —gateway, políticas, seguridad, catálogo de servicios, observabilidad y gobierno— para apoyar la explicación técnica de la arquitectura.
+La demo de ISO-810 será independiente y estará enfocada en conceptos compatibles con el caso Akana: servicios, contratos, APIs, políticas, gateway y gobierno.
 
-## Investigación pendiente
+SOAForge no pretende clonar un producto comercial; la plataforma real será investigada por separado y la demo servirá para ilustrar los conceptos técnicos.
 
-La denominación del proveedor incluida en el enunciado se conservará como referencia académica, pero la historia del producto, propiedad actual, versiones y licenciamiento se documentarán con fuentes verificables durante la Fase 8.
+### Segundo parcial
+
+Habrá una **segunda presentación independiente de ISO-810**. El tema se documentará cuando sea asignado.
