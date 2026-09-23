@@ -25,14 +25,21 @@
 
 **SOAForge** es un laboratorio académico de integración de aplicaciones diseñado para demostrar conceptos de **arquitectura orientada a servicios (SOA)**, gobierno de APIs, seguridad, observabilidad y middleware empresarial mediante un mismo dominio de demostración.
 
-El proyecto se utiliza como base técnica compartida para dos asignaturas de UNAPEC durante **Septiembre - Diciembre 2026**:
+El repositorio reúne trabajo académico de dos asignaturas de UNAPEC durante **Septiembre - Diciembre 2026**:
 
 - **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)**;
 - **Integración de Aplicaciones con Tecnología Open Source (ISO-815)**.
 
-La intención es implementar una lógica de negocio común y comparar dos perfiles de integración sin duplicar innecesariamente el dominio.
+Cada asignatura conserva su **propia presentación y su propio caso de estudio**. SOAForge funciona como repositorio paraguas para preservar investigación, presentaciones y pequeñas demostraciones programadas, pero **ISO-810 e ISO-815 no comparten una única presentación comparativa**.
 
-> 🎓 **Caso académico propietario:** ISO-810 utiliza **Solución Akana SOA** como eje de investigación y presentación. ISO-815 estudia una implementación equivalente mediante componentes open source.
+### Primer parcial
+
+- **ISO-810:** **Akana SOA** — presentación independiente de Tecnología Propietaria.
+- **ISO-815:** **BonitaSoft BPM** — presentación independiente de Tecnología Open Source.
+
+### Segundo parcial
+
+Se mantendrá el mismo esquema académico: **dos presentaciones separadas**, una por asignatura. Los temas específicos del segundo parcial se documentarán cuando sean asignados.
 
 ---
 
@@ -45,7 +52,7 @@ La intención es implementar una lógica de negocio común y comparar dos perfil
 | 📅 Período académico | **Septiembre - Diciembre 2026** |
 | 📖 Asignatura 1 | **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)** |
 | 📖 Asignatura 2 | **Integración de Aplicaciones con Tecnología Open Source (ISO-815)** |
-| 📁 Tipo de entrega | **Presentación académica + laboratorio técnico comparativo** |
+| 📁 Tipo de entrega | **Presentaciones independientes por asignatura + demostraciones técnicas** |
 
 ### 👥 Equipo académico original
 
@@ -91,7 +98,7 @@ Esta continuidad se refiere al **profesor efectivo de las asignaturas cursadas**
 
 ## 🎯 Objetivo
 
-Construir un entorno de demostración donde aplicaciones y servicios independientes se integren a través de una capa de gateway y gobierno, permitiendo comparar un enfoque propietario con una alternativa open source bajo un mismo dominio funcional.
+Conservar en un solo repositorio las investigaciones y demostraciones técnicas de ISO-810 e ISO-815, manteniendo **entregables independientes por asignatura y por parcial**. Cuando resulte útil, ambas demostraciones podrán reutilizar un dominio ficticio común, pero cada una debe responder a la herramienta y al enfoque académico de su propia presentación.
 
 Los objetivos técnicos previstos son:
 
@@ -100,7 +107,7 @@ Los objetivos técnicos previstos son:
 - aplicar autenticación y políticas;
 - documentar contratos de servicio;
 - incorporar gobierno y observabilidad;
-- comparar equivalencias propietarias y open source;
+- desarrollar pequeñas demos separadas que respalden cada presentación;
 - preparar un escenario de infraestructura para aproximadamente 500 usuarios;
 - respaldar las presentaciones académicas con una demo reproducible.
 
@@ -108,7 +115,7 @@ Los objetivos técnicos previstos son:
 
 ## 🧪 Caso de demostración — NovaCommerce
 
-SOAForge utiliza un dominio empresarial ficticio llamado **NovaCommerce**.
+SOAForge puede reutilizar un dominio empresarial ficticio llamado **NovaCommerce** como sandbox técnico. Esto no convierte las presentaciones en una sola entrega: el caso de Akana SOA y el caso de BonitaSoft BPM conservan objetivos y demostraciones independientes.
 
 Servicios iniciales previstos:
 
@@ -192,14 +199,11 @@ Cliente / Portal
   <img src="https://img.shields.io/badge/API%20Gateway-Planificado-0F766E?style=flat-square" alt="API Gateway planificado" />
 </p>
 
-- **ISO-810:** Akana SOA/API Management como caso académico propietario;
-- **ISO-815:** gateway e identidad open source por seleccionar y validar durante las fases correspondientes;
-- routing centralizado;
-- autenticación/autorización;
-- JWT;
-- rate limiting;
-- políticas;
-- auditoría.
+- **ISO-810 / Primer parcial:** Akana SOA/API Management como caso académico propietario;
+- **ISO-815 / Primer parcial:** BonitaSoft BPM como caso académico open source;
+- el demo de ISO-810 podrá enfatizar servicios, APIs, gateway, políticas y gobierno;
+- el demo de ISO-815 deberá enfatizar modelado y ejecución de procesos BPM, tareas, formularios e integración;
+- cualquier reutilización de componentes entre demos será técnica, no una fusión de las presentaciones.
 
 ### 📊 Observabilidad — planificada
 
@@ -260,17 +264,17 @@ Cuando se implemente la solución .NET, el portal y las pruebas, el pipeline deb
 
 | Fase | Alcance | Estado |
 |---:|---|:---:|
-| 0 | Identidad, alcance, arquitectura y estructura | 🟡 En progreso |
-| 1 | Customer, Order y Payment Services | ⏳ |
-| 2 | API Gateway y comunicación SOA | ⏳ |
-| 3 | Autenticación, políticas y governance | ⏳ |
-| 4 | Portal web y catálogo de servicios | ⏳ |
-| 5 | Stack Open Source para ISO-815 | ⏳ |
-| 6 | Observabilidad: logs, métricas y dashboards | ⏳ |
-| 7 | Escenario empresarial para 500 usuarios | ⏳ |
-| 8 | Investigación completa de Akana | ⏳ |
-| 9 | Comparativa propietaria vs. open source | ⏳ |
-| 10 | Presentaciones ISO-810 / ISO-815 y demo final | ⏳ |
+| 0 | Identidad, alcance y estructura académica | 🟡 En progreso |
+| 1 | Primer parcial: briefs y separación de entregables | ⏳ |
+| 2 | ISO-810 P1: investigación Akana SOA | ⏳ |
+| 3 | ISO-810 P1: demo técnica Akana/SOA | ⏳ |
+| 4 | ISO-815 P1: investigación BonitaSoft BPM | ⏳ |
+| 5 | ISO-815 P1: demo técnica BPM | ⏳ |
+| 6 | Primer parcial: presentaciones y guiones | ⏳ |
+| 7 | Segundo parcial: alta de los dos temas | ⏳ |
+| 8 | ISO-810 P2: investigación + demo | ⏳ |
+| 9 | ISO-815 P2: investigación + demo | ⏳ |
+| 10 | Cierre académico y preservación de portafolio | ⏳ |
 
 El detalle verificable de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
 
@@ -283,7 +287,7 @@ El detalle verificable de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADM
 Ya están definidos:
 
 - identidad y propósito;
-- separación de los tracks ISO-810 / ISO-815;
+- separación de los tracks ISO-810 / ISO-815 y de sus presentaciones;
 - arquitectura SOA inicial;
 - estructura de repositorio;
 - equipo y participación por asignatura;
@@ -301,7 +305,7 @@ La implementación funcional comienza en **Fase 1 — Core Services**.
 - [**ISO-810**](docs/academic/ISO-810/) — material de Tecnología Propietaria;
 - [**ISO-815**](docs/academic/ISO-815/) — material de Tecnología Open Source;
 - [**Arquitectura**](docs/architecture/) — decisiones y diagramas;
-- [**Investigación**](docs/research/) — investigación del caso Akana;
+- [**Investigación**](docs/research/) — tracks separados de Akana SOA y BonitaSoft BPM;
 - [**src/README.md**](src/README.md) — estructura prevista de código;
 - [**infrastructure/README.md**](infrastructure/README.md) — perfiles de infraestructura;
 - [**tests/README.md**](tests/README.md) — estrategia de pruebas prevista.
