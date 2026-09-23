@@ -1,59 +1,48 @@
 # Architecture
 
-## Architectural Style
+SOAForge ya no se modela como una única solución comparativa. El repositorio contiene **dos líneas técnicas independientes** por parcial.
 
-SOAForge adopta una arquitectura orientada a servicios con un punto de entrada controlado mediante API Gateway.
+## ISO-810 / Primer parcial — Akana SOA
 
 ```text
-                       ┌──────────────────────┐
-                       │   Web / Consumers    │
-                       └──────────┬───────────┘
-                                  │
-                                  ▼
-                       ┌──────────────────────┐
-                       │      API Gateway     │
-                       │ routing · policies   │
-                       │ auth · rate limits   │
-                       └──────────┬───────────┘
-                                  │
-             ┌────────────────────┼────────────────────┐
-             │                    │                    │
-             ▼                    ▼                    ▼
-    ┌────────────────┐   ┌────────────────┐   ┌────────────────┐
-    │ Customer       │   │ Order          │   │ Payment        │
-    │ Service        │   │ Service        │   │ Service        │
-    └────────────────┘   └────────────────┘   └────────────────┘
-             │                    │                    │
-             └────────────────────┼────────────────────┘
-                                  ▼
-                       Data / Messaging / Logs
+Consumer / Client
+       │
+       ▼
+ SOA / API Layer
+       │
+ ┌─────┼──────────────┐
+ ▼     ▼              ▼
+Service A         Service B         Service C
+       │
+       ▼
+ Policies / Governance / Observability
 ```
 
-## Principles
+La demo enfatizará contratos, integración de servicios, routing, políticas y gobierno.
 
-1. **Service autonomy** — each business capability owns its application boundary.
-2. **Explicit contracts** — integrations are exposed through documented APIs.
-3. **Loose coupling** — consumers depend on contracts, not internal implementation.
-4. **Centralized edge governance** — external traffic enters through a gateway.
-5. **Observability by design** — requests must be traceable across service boundaries.
-6. **Replaceable infrastructure** — business services should not depend on one gateway vendor.
-7. **Academic comparability** — proprietary and open-source profiles implement equivalent concerns.
+## ISO-815 / Primer parcial — BonitaSoft BPM
 
-## Initial Domain
+```text
+User / Request
+      │
+      ▼
+ BPM Process
+      │
+ ┌────┼───────────────┐
+ ▼    ▼               ▼
+Task  Decision     Service/Connector
+      │
+      ▼
+ Completion / Audit
+```
 
-### Customer Service
-Owns customer profiles and customer lookup operations.
+La demo enfatizará modelado de procesos, tareas humanas, decisiones, formularios e integración.
 
-### Order Service
-Owns orders and coordinates customer validation before order creation.
+## Principle
 
-### Payment Service
-Owns payment records and payment state transitions.
+La separación es académica y técnica:
 
-## First integration scenario
-
-1. A consumer creates or selects a customer.
-2. The consumer creates an order.
-3. Order Service validates the customer through Customer Service.
-4. A payment is registered against the order.
-5. The request flow is logged and observable through the integration layer.
+1. cada asignatura tiene su propia presentación;
+2. cada parcial tiene su propio caso asignado;
+3. cada demo debe poder explicarse y ejecutarse de manera independiente;
+4. componentes reutilizables pueden compartirse solo cuando no mezclen el propósito de las entregas.
