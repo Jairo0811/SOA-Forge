@@ -20,18 +20,24 @@ jobs:
           set -euo pipefail
           test -f README.md
           test -f docs/ROADMAP.md
+          test -f docs/academic/ISO-810/README.md
+          test -f docs/architecture/README.md
+          test -f docs/research/README.md
           test -f src/README.md
           test -f infrastructure/README.md
           test -f tests/README.md
 
-      - name: Validate UNAPEC portfolio sections
+      - name: Validate UNAPEC ISO-810 scope
         shell: bash
         run: |
           set -euo pipefail
           grep -Fq "## 🎓 Información académica" README.md
-          grep -Fq "### 👥 Equipo académico original" README.md
-          grep -Fq "## 🧭 Continuidad académica" README.md
-          grep -Fq "## 🧱 Stack tecnológico" README.md
+          grep -Fq "### 👥 Equipo" README.md
+          grep -Fq "## 🧱 Stack objetivo" README.md
           grep -Fq "## 🗺️ Roadmap" README.md
           grep -Fq "ISO-810" README.md
-          grep -Fq "ISO-815" README.md
+          grep -Fq "Akana SOA" README.md
+          if grep -Fq "ISO-815" README.md; then
+            echo "README must remain scoped to ISO-810 only."
+            exit 1
+          fi
