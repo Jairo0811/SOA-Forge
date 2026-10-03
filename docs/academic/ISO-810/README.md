@@ -2,9 +2,11 @@
 
 ## Datos académicos
 
+- **Universidad:** Universidad APEC (UNAPEC)
 - **Profesor:** Juan Pablo Valdez Reyes
 - **Período académico:** Septiembre - Diciembre 2026
-- **Universidad:** Universidad APEC (UNAPEC)
+- **Entrega:** Primer parcial
+- **Caso asignado:** Akana SOA
 
 ## Equipo
 
@@ -12,13 +14,16 @@
 - **Francis Jairo Matias Rosario** — A00115261
 - **Jorge Alexander Minier Terrero** — A00105678
 
-> Eliandres Rodriguez Cepeda no forma parte del grupo de ISO-810; su participación en SOAForge corresponde exclusivamente a ISO-815.
+## Alcance
 
-## Enfoque de SOAForge
+SOAForge pertenece exclusivamente a ISO-810. El repositorio combina dos piezas relacionadas pero distintas:
 
-La línea ISO-810 utiliza **Akana SOA** como caso de estudio de integración empresarial con tecnología propietaria.
+1. **Investigación y presentación sobre Akana SOA** como solución empresarial propietaria.
+2. **Demo académica propia** para ilustrar conceptos de integración orientada a servicios.
 
-El enunciado académico del primer parcial asigna al grupo la investigación de **“Solución Akana (Microsot) SOA”** y solicita cubrir:
+La demo no se presenta como Akana real ni como un clon del producto.
+
+## Investigación requerida
 
 1. Introducción al SOA.
 2. Introducción a BPM.
@@ -27,15 +32,21 @@ El enunciado académico del primer parcial asigna al grupo la investigación de 
 5. Módulos de la aplicación.
 6. Componentes principales.
 7. Principales competidores.
-8. Hardware y/o appliance para una empresa con 500 usuarios.
-9. Elementos usuales de una solución SOA.
-10. Costos aproximados para una implementación de 500 usuarios.
-11. Otros aspectos relevantes definidos por el grupo.
+8. Hardware y/o appliance requeridos para una implementación en una empresa con 500 usuarios.
+9. Elementos usuales —páginas, servicios, APIs, políticas u otros— que incluye una solución SOA con la herramienta.
+10. Costos aproximados para una implementación en una empresa con 500 usuarios.
+11. Cualquier otro aspecto que el grupo considere importante.
 
-## Uso de la demo
+## Demo programada
 
-SOAForge no pretende clonar un producto comercial. El laboratorio implementará conceptos equivalentes —gateway, políticas, seguridad, catálogo de servicios, observabilidad y gobierno— para apoyar la explicación técnica de la arquitectura.
+La demo propuesta utiliza el dominio ficticio **NovaCommerce** y tres servicios iniciales:
 
-## Investigación pendiente
+- Customer Service;
+- Order Service;
+- Payment Service.
 
-La denominación del proveedor incluida en el enunciado se conservará como referencia académica, pero la historia del producto, propiedad actual, versiones y licenciamiento se documentarán con fuentes verificables durante la Fase 8.
+El objetivo técnico es demostrar contratos, integración entre servicios, API Gateway, políticas, seguridad, documentación y observabilidad.
+
+## Regla de investigación
+
+Los datos sobre Akana, fabricante, historia, versiones, licenciamiento, costos, capacidades comerciales y requisitos de infraestructura deben acompañarse de fuentes verificables y fecha de consulta. Las estimaciones deben identificarse expresamente como estimaciones.
