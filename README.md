@@ -28,7 +28,7 @@
 
 El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación de la plataforma y una demostración técnica propia para ilustrar conceptos de arquitectura orientada a servicios, contratos, APIs, gateway, políticas, gobierno y observabilidad.
 
-> SOAForge es exclusivamente el proyecto de **ISO-810 / Akana SOA**. Los trabajos de ISO-815 se mantienen en un repositorio independiente.
+> SOAForge es exclusivamente el proyecto de **ISO-810 / Akana SOA**. Los trabajos de integración con tecnología open source se mantienen en un repositorio independiente.
 
 ---
 
@@ -43,13 +43,28 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 | 🧩 Primer parcial | **Akana SOA** |
 | 📁 Entrega | **Investigación + presentación + demo técnica** |
 
-### 👥 Equipo
+### 👥 Equipo académico original
 
-| Integrante | Matrícula |
+| 👤 Integrante | 🆔 Matrícula |
 |---|---|
-| **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
-| **Francis Jairo Matias Rosario** | **A00115261** |
-| **Jorge Alexander Minier Terrero** | **A00105678** |
+| 👨🏻‍💻 **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
+| 👨🏻‍💻 **Francis Jairo Matias Rosario** | **A00115261** |
+| 👨🏻‍💻 **Jorge Alexander Minier Terrero** | **A00105678** |
+
+---
+
+## 🧭 Continuidad académica
+
+### 👨‍🏫 Continuidad por profesor
+
+El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de Software con Tecnología Open Source 2 (ISO-715)**, asignatura asociada a [**RentCarRD**](https://github.com/Jairo0811/RentCarRD), durante **Mayo - Agosto 2026**. En **Septiembre - Diciembre 2026** continúa como profesor de **SOAForge**, correspondiente a **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)**.
+
+| Orden | Asignatura | Proyecto | Período |
+|---:|---|---|---|
+| 1 | Desarrollo de Software con Tecnología Open Source 2 (ISO-715) | [**RentCarRD**](https://github.com/Jairo0811/RentCarRD) | Mayo - Agosto 2026 |
+| 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
+
+La relación es **docente, formativa y cronológica**. No implica dependencia técnica entre ambos proyectos.
 
 ---
 
@@ -236,7 +251,7 @@ El detalle de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
 
 **Fase 0 — Foundation: ✅ completada.**
 
-Quedaron cerrados el alcance ISO-810, equipo, datos académicos, arquitectura inicial, estructura del repositorio, separación de ISO-815 y la identidad visual definitiva.
+Quedaron cerrados el alcance ISO-810, equipo, datos académicos, arquitectura inicial, estructura del repositorio, separación del proyecto open source y la identidad visual definitiva.
 
 El proyecto queda listo para entrar a **Fase 1 — Investigación completa de Akana SOA**.
 
