@@ -28,7 +28,7 @@
 
 El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación de la plataforma y una demostración técnica propia para ilustrar conceptos de arquitectura orientada a servicios, contratos, APIs, gateway, políticas, gobierno y observabilidad.
 
-> SOAForge es exclusivamente el proyecto de **ISO-810 / Akana SOA**. Los trabajos de ISO-815 se mantienen en un repositorio independiente.
+> SOAForge es exclusivamente el proyecto de **ISO-810 / Akana SOA**. Los trabajos de integración con tecnología open source se mantienen en un repositorio independiente.
 
 ---
 
@@ -51,8 +51,6 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 | 👨🏻‍💻 **Francis Jairo Matias Rosario** | **A00115261** |
 | 👨🏻‍💻 **Jorge Alexander Minier Terrero** | **A00105678** |
 
-> **Eliandres Rodriguez Cepeda no forma parte de SOAForge. Su participación corresponde exclusivamente a BonitaSoft / ISO-815.**
-
 ---
 
 ## 🧭 Continuidad académica
@@ -67,17 +65,6 @@ El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de So
 | 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
 
 La relación es **docente, formativa y cronológica**. No implica dependencia técnica entre ambos proyectos.
-
-### 🔀 Relación paralela con BonitaSoft
-
-Durante **Septiembre - Diciembre 2026**, SOAForge y [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) se desarrollan en paralelo con el mismo profesor, **Juan Pablo Valdez Reyes**, pero pertenecen a asignaturas distintas:
-
-- **SOAForge → ISO-810 — Integración de Aplicaciones con Tecnología Propietaria**;
-- **BonitaSoft → ISO-815 — Integración de Aplicaciones con Tecnología Open Source**.
-
-Comparten tres integrantes: **Enmanueli Alfonso Rondon Marrero**, **Francis Jairo Matias Rosario** y **Jorge Alexander Minier Terrero**.
-
-**Eliandres Rodriguez Cepeda participa únicamente en BonitaSoft / ISO-815 y no pertenece al equipo de SOAForge / ISO-810.**
 
 ---
 
@@ -264,7 +251,7 @@ El detalle de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
 
 **Fase 0 — Foundation: ✅ completada.**
 
-Quedaron cerrados el alcance ISO-810, equipo, datos académicos, arquitectura inicial, estructura del repositorio, separación de ISO-815 y la identidad visual definitiva.
+Quedaron cerrados el alcance ISO-810, equipo, datos académicos, arquitectura inicial, estructura del repositorio, separación del proyecto open source y la identidad visual definitiva.
 
 El proyecto queda listo para entrar a **Fase 1 — Investigación completa de Akana SOA**.
 
