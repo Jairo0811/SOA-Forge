@@ -88,7 +88,7 @@ El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de So
 |---:|---|---|---|
 | 1 | Desarrollo de Software con Tecnología Open Source 2 (ISO-715) | [**RentCarRD**](https://github.com/Jairo0811/RentCarRD) | Mayo - Agosto 2026 |
 | 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
-| 4 | Integración de Aplicaciones con Tecnología Open Source (ISO-815) | [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) | Septiembre - Diciembre 2026 |
+| 3 | Integración de Aplicaciones con Tecnología Open Source (ISO-815) | [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) | Septiembre - Diciembre 2026 |
 
 Esta continuidad se refiere al **profesor efectivo de las asignaturas cursadas**. Se mantiene separada de la relación documental existente en otros proyectos donde Juan Pablo Valdez Reyes figura como autor de enunciados académicos previos.
 
