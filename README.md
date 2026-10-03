@@ -1,10 +1,12 @@
 <div align="center">
 
-# SOAForge
+<img src="assets/soaforge-logo.svg" alt="SOAForge — Enterprise Application Integration Lab" width="100%" />
+
+<br/>
 
 <img src="https://img.shields.io/badge/UNAPEC-ISO--810-003B70?style=for-the-badge" alt="UNAPEC ISO-810" />
 <img src="https://img.shields.io/badge/Primer%20Parcial-Akana%20SOA-7C3AED?style=for-the-badge" alt="Primer parcial: Akana SOA" />
-<img src="https://img.shields.io/badge/Estado-Fase%200%20en%20progreso-14B8A6?style=for-the-badge" alt="Estado: Fase 0 en progreso" />
+<img src="https://img.shields.io/badge/Fase%200-Completada-22C55E?style=for-the-badge" alt="Fase 0 completada" />
 
 <br/><br/>
 
@@ -48,6 +50,20 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 | **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
 | **Francis Jairo Matias Rosario** | **A00115261** |
 | **Jorge Alexander Minier Terrero** | **A00105678** |
+
+---
+
+## 🎨 Identidad visual
+
+La Fase 0 incorpora la identidad visual definitiva de SOAForge:
+
+- [**Logo principal**](assets/soaforge-logo.svg)
+- [**Ícono**](assets/soaforge-icon.svg)
+- [**Guía de marca**](assets/README.md)
+
+El concepto combina un **portal/gateway central**, nodos de servicios empresariales y una paleta **azul/cian + ámbar/dorado** para representar integración, interoperabilidad y la idea de *forge*.
+
+**Tagline:** `CONNECT • INTEGRATE • BUILD • BEYOND`
 
 ---
 
@@ -115,7 +131,7 @@ Flujo de demostración previsto:
 
 ## 🧱 Stack objetivo
 
-> El proyecto permanece en **Fase 0**. Este es el stack planificado; todavía no debe interpretarse como implementación terminada.
+> **Fase 0 completada.** Los siguientes componentes pertenecen a las fases de implementación y todavía no deben interpretarse como funcionalidad terminada.
 
 ### Backend y servicios
 
@@ -155,6 +171,10 @@ Flujo de demostración previsto:
 
 <pre>
 SOA-Forge/
+├── assets/
+│   ├── soaforge-logo.svg
+│   ├── soaforge-icon.svg
+│   └── README.md
 ├── docs/
 │   ├── academic/
 │   │   └── ISO-810/
@@ -199,8 +219,8 @@ Los datos comerciales, versiones, licencias, costos y requisitos de infraestruct
 
 | Fase | Alcance | Estado |
 |---:|---|:---:|
-| 0 | Alcance, identidad, estructura y datos académicos | 🟡 En progreso |
-| 1 | Investigación completa de Akana SOA | ⏳ |
+| 0 | Alcance, identidad, estructura y datos académicos | ✅ Completada |
+| 1 | Investigación completa de Akana SOA | ▶️ Siguiente |
 | 2 | Core Services: Customer, Order y Payment | ⏳ |
 | 3 | API Gateway y comunicación SOA | ⏳ |
 | 4 | Seguridad, políticas y governance | ⏳ |
@@ -214,11 +234,11 @@ El detalle de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
 
 ## 📊 Estado actual
 
-**Fase 0 — Foundation: en progreso.**
+**Fase 0 — Foundation: ✅ completada.**
 
-Ya están definidos el propósito, equipo, datos académicos, arquitectura inicial y alcance técnico. Resta incorporar los **brand assets definitivos** para cerrar formalmente la Fase 0.
+Quedaron cerrados el alcance ISO-810, equipo, datos académicos, arquitectura inicial, estructura del repositorio, separación de ISO-815 y la identidad visual definitiva.
 
-Después inicia la **Fase 1 — Investigación completa de Akana SOA** y, en paralelo, la preparación del esqueleto técnico de la demo.
+El proyecto queda listo para entrar a **Fase 1 — Investigación completa de Akana SOA**.
 
 ---
 
@@ -228,6 +248,7 @@ Después inicia la **Fase 1 — Investigación completa de Akana SOA** y, en par
 - [**ISO-810 / Akana SOA**](docs/academic/ISO-810/)
 - [**Arquitectura**](docs/architecture/)
 - [**Investigación**](docs/research/)
+- [**Brand assets**](assets/)
 - [**Código previsto**](src/README.md)
 - [**Infraestructura**](infrastructure/README.md)
 - [**Pruebas**](tests/README.md)
