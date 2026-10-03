@@ -83,3 +83,5 @@ Comparten tres integrantes: **Enmanueli Alfonso Rondon Marrero**, **Francis Jair
           git diff --cached --quiet && exit 0
           git commit -m "docs: add ISO-810 academic continuity"
           git push origin HEAD:docs/add-academic-continuity-iso810
+
+# retry
