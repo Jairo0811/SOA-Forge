@@ -1,23 +1,30 @@
 # Research Index
 
-Esta carpeta concentrará la investigación académica utilizada por las presentaciones de SOAForge.
+Esta carpeta concentra la investigación del primer parcial de **ISO-810 — Integración de Aplicaciones con Tecnología Propietaria**.
+
+## Caso principal
+
+**Akana SOA**
 
 ## Topics
 
 - SOA fundamentals
 - BPM fundamentals
-- SOA history and evolution
-- Akana platform research
+- Akana history and evolution
+- Akana modules and components
 - API management and governance
-- Proprietary middleware
-- Open-source integration middleware
-- Enterprise deployment for a 500-user scenario
-- Licensing and cost analysis
-- SOA vs microservices
-- SOAP vs REST
-- Security and identity
-- Observability and operational governance
+- service lifecycle
+- policies and security
+- competitors
+- enterprise deployment for a 500-user scenario
+- licensing and cost analysis
+- typical solution elements
+- SOAP vs REST where relevant
+- SOA and API Management relationship
+- observability and operational governance
 
 ## Research rule
 
-Los datos sobre fabricantes, licencias, versiones, precios, capacidades comerciales y requisitos de infraestructura deberán acompañarse de fuente y fecha de consulta. Las estimaciones se identificarán explícitamente como tales.
+Los datos sobre fabricante, propiedad del producto, versiones, licencias, precios, capacidades comerciales y requisitos de infraestructura deberán acompañarse de fuente y fecha de consulta.
+
+Las estimaciones de costos o capacidad se identificarán explícitamente como tales y se separarán de cualquier cifra oficial publicada.

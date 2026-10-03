@@ -1,8 +1,8 @@
 # Architecture
 
-## Architectural Style
+SOAForge adopta una arquitectura orientada a servicios para respaldar la presentación de **Akana SOA** en ISO-810.
 
-SOAForge adopta una arquitectura orientada a servicios con un punto de entrada controlado mediante API Gateway.
+## Target architecture
 
 ```text
                        ┌──────────────────────┐
@@ -26,34 +26,35 @@ SOAForge adopta una arquitectura orientada a servicios con un punto de entrada c
              │                    │                    │
              └────────────────────┼────────────────────┘
                                   ▼
-                       Data / Messaging / Logs
+                       Data / Logs / Metrics
 ```
 
 ## Principles
 
-1. **Service autonomy** — each business capability owns its application boundary.
-2. **Explicit contracts** — integrations are exposed through documented APIs.
-3. **Loose coupling** — consumers depend on contracts, not internal implementation.
-4. **Centralized edge governance** — external traffic enters through a gateway.
-5. **Observability by design** — requests must be traceable across service boundaries.
-6. **Replaceable infrastructure** — business services should not depend on one gateway vendor.
-7. **Academic comparability** — proprietary and open-source profiles implement equivalent concerns.
+1. **Service autonomy** — cada capacidad de negocio mantiene su frontera.
+2. **Explicit contracts** — la integración se expone mediante contratos documentados.
+3. **Loose coupling** — los consumidores dependen del contrato y no de la implementación interna.
+4. **Gateway-mediated access** — el tráfico externo pasa por un punto de control.
+5. **Policy enforcement** — autenticación, autorización, límites y reglas se aplican de forma explícita.
+6. **Observability by design** — las solicitudes deben poder rastrearse entre servicios.
+7. **Akana mapping** — la documentación indicará qué concepto de la demo corresponde a capacidades estudiadas en Akana, sin afirmar que la demo ejecuta Akana.
 
-## Initial Domain
+## Initial domain
 
 ### Customer Service
-Owns customer profiles and customer lookup operations.
+Gestiona clientes y consultas de identidad de negocio.
 
 ### Order Service
-Owns orders and coordinates customer validation before order creation.
+Gestiona órdenes y valida la existencia del cliente antes de crear una orden.
 
 ### Payment Service
-Owns payment records and payment state transitions.
+Gestiona pagos y estados de pago asociados a órdenes.
 
 ## First integration scenario
 
-1. A consumer creates or selects a customer.
-2. The consumer creates an order.
-3. Order Service validates the customer through Customer Service.
-4. A payment is registered against the order.
-5. The request flow is logged and observable through the integration layer.
+1. Se crea o consulta un cliente.
+2. Se solicita la creación de una orden.
+3. Order Service consulta Customer Service.
+4. Se registra un pago contra la orden.
+5. El acceso externo se enruta mediante el Gateway.
+6. La operación queda registrada para observabilidad y auditoría.

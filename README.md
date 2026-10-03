@@ -1,11 +1,12 @@
 <div align="center">
 
-# SOAForge
+<img src="assets/soaforge-logo.svg" alt="SOAForge — Enterprise Application Integration Lab" width="100%" />
+
+<br/>
 
 <img src="https://img.shields.io/badge/UNAPEC-ISO--810-003B70?style=for-the-badge" alt="UNAPEC ISO-810" />
-<img src="https://img.shields.io/badge/UNAPEC-ISO--815-003B70?style=for-the-badge" alt="UNAPEC ISO-815" />
-<img src="https://img.shields.io/badge/Estado-Fase%200%20en%20progreso-14B8A6?style=for-the-badge" alt="Estado: Fase 0 en progreso" />
-<img src="https://img.shields.io/badge/Tipo-Laboratorio%20SOA%20%7C%20Portafolio-6F42C1?style=for-the-badge" alt="Laboratorio SOA y proyecto de portafolio" />
+<img src="https://img.shields.io/badge/Primer%20Parcial-Akana%20SOA-7C3AED?style=for-the-badge" alt="Primer parcial: Akana SOA" />
+<img src="https://img.shields.io/badge/Fase%200-Completada-22C55E?style=for-the-badge" alt="Fase 0 completada" />
 
 <br/><br/>
 
@@ -23,16 +24,11 @@
 
 ## 📌 Descripción
 
-**SOAForge** es un laboratorio académico de integración de aplicaciones diseñado para demostrar conceptos de **arquitectura orientada a servicios (SOA)**, gobierno de APIs, seguridad, observabilidad y middleware empresarial mediante un mismo dominio de demostración.
+**SOAForge** es el proyecto académico del primer parcial de **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)** en UNAPEC.
 
-El proyecto se utiliza como base técnica compartida para dos asignaturas de UNAPEC durante **Septiembre - Diciembre 2026**:
+El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación de la plataforma y una demostración técnica propia para ilustrar conceptos de arquitectura orientada a servicios, contratos, APIs, gateway, políticas, gobierno y observabilidad.
 
-- **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)**;
-- **Integración de Aplicaciones con Tecnología Open Source (ISO-815)**.
-
-La intención es implementar una lógica de negocio común y comparar dos perfiles de integración sin duplicar innecesariamente el dominio.
-
-> 🎓 **Caso académico propietario:** ISO-810 utiliza **Solución Akana SOA** como eje de investigación y presentación. ISO-815 estudia una implementación equivalente mediante componentes open source.
+> SOAForge es exclusivamente el proyecto de **ISO-810 / Akana SOA**. Los trabajos de ISO-815 se mantienen en un repositorio independiente.
 
 ---
 
@@ -43,92 +39,57 @@ La intención es implementar una lógica de negocio común y comparar dos perfil
 | 🏫 Institución | **Universidad APEC (UNAPEC)** |
 | 👨‍🏫 Profesor | **Juan Pablo Valdez Reyes** |
 | 📅 Período académico | **Septiembre - Diciembre 2026** |
-| 📖 Asignatura 1 | **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)** |
-| 📖 Asignatura 2 | **Integración de Aplicaciones con Tecnología Open Source (ISO-815)** |
-| 📁 Tipo de entrega | **Presentación académica + laboratorio técnico comparativo** |
+| 📖 Asignatura | **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)** |
+| 🧩 Primer parcial | **Akana SOA** |
+| 📁 Entrega | **Investigación + presentación + demo técnica** |
 
-### 👥 Equipo académico original
+### 👥 Equipo
 
-| 👤 Integrante | 🆔 Matrícula | ISO-810 | ISO-815 |
-|---|---|:---:|:---:|
-| 👨🏻‍💻 **Enmanueli Alfonso Rondon Marrero** | **A00115575** | ✅ | ✅ |
-| 👨🏻‍💻 **Francis Jairo Matias Rosario** | **A00115261** | ✅ | ✅ |
-| 👨🏻‍💻 **Eliandres Rodriguez Cepeda** | **A00112070** | — | ✅ |
-| 👨🏻‍💻 **Jorge Alexander Minier Terrero** | **A00105678** | ✅ | ✅ |
-
-> **Eliandres Rodriguez Cepeda participa exclusivamente en ISO-815. No pertenece a ISO-810.** Por tanto, las entregas de ISO-810 deben conservar únicamente a Enmanueli Alfonso Rondon Marrero, Francis Jairo Matias Rosario y Jorge Alexander Minier Terrero.
+| Integrante | Matrícula |
+|---|---|
+| **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
+| **Francis Jairo Matias Rosario** | **A00115261** |
+| **Jorge Alexander Minier Terrero** | **A00105678** |
 
 ---
 
-## 🧭 Continuidad académica
+## 🎨 Identidad visual
 
-SOAForge presenta tres relaciones académicas verificables dentro de la colección de proyectos preservados de UNAPEC: continuidad por **estudiante recurrente**, continuidad por **profesor efectivo** y una relación **paralela de ISO-815** con BonitaSoft.
+La Fase 0 incorpora la identidad visual definitiva de SOAForge:
 
-### 👥 Continuidad por estudiante
+- [**Logo principal**](assets/soaforge-logo.svg)
+- [**Ícono**](assets/soaforge-icon.svg)
+- [**Guía de marca**](assets/README.md)
 
-**Eliandres Rodriguez Cepeda (A00112070)** participó previamente junto a Francis Jairo Matias Rosario en [**Kognia**](https://github.com/Jairo0811/Kognia), proyecto final de **Gestión de Sitios Web (ISO-700)** durante **Mayo - Agosto 2024**. En **Septiembre - Diciembre 2026** vuelve a coincidir con Francis exclusivamente dentro de **ISO-815**, tanto en SOAForge como en [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft).
+El concepto combina un **portal/gateway central**, nodos de servicios empresariales y una paleta **azul/cian + ámbar/dorado** para representar integración, interoperabilidad y la idea de *forge*.
 
-| Orden | Asignatura | Proyecto | Período |
-|---:|---|---|---|
-| 1 | Gestión de Sitios Web (ISO-700) | [**Kognia**](https://github.com/Jairo0811/Kognia) | Mayo - Agosto 2024 |
-| 2 | Integración de Aplicaciones con Tecnología Open Source (ISO-815) | **SOAForge** | Septiembre - Diciembre 2026 |
-| 3 | Integración de Aplicaciones con Tecnología Open Source (ISO-815) | [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) | Septiembre - Diciembre 2026 |
-
-Las filas 2 y 3 corresponden al **mismo período académico y a proyectos paralelos**. No representan una secuencia temporal entre SOAForge y BonitaSoft.
-
-> **Alcance de Eliandres:** su continuidad en 2026 se limita a **ISO-815**. No se le atribuye participación en **ISO-810**.
-
-La relación es **formativa y cronológica** respecto de Kognia; los proyectos siguen siendo técnicamente independientes.
-
-### 👨‍🏫 Continuidad por profesor
-
-El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de Software con Tecnología Open Source 2 (ISO-715)**, asignatura asociada a [**RentCarRD**](https://github.com/Jairo0811/RentCarRD), durante **Mayo - Agosto 2026**. En el período siguiente aparece como profesor efectivo de **ISO-810** e **ISO-815** dentro de SOAForge y de **ISO-815** en BonitaSoft.
-
-| Orden | Asignatura | Proyecto | Período |
-|---:|---|---|---|
-| 1 | Desarrollo de Software con Tecnología Open Source 2 (ISO-715) | [**RentCarRD**](https://github.com/Jairo0811/RentCarRD) | Mayo - Agosto 2026 |
-| 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
-| 3 | Integración de Aplicaciones con Tecnología Open Source (ISO-815) | [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) | Septiembre - Diciembre 2026 |
-
-Esta continuidad se refiere al **profesor efectivo de las asignaturas cursadas**. Se mantiene separada de la relación documental existente en otros proyectos donde Juan Pablo Valdez Reyes figura como autor de enunciados académicos previos.
-
-### 🔀 Relación paralela con BonitaSoft en ISO-815
-
-SOAForge y [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) comparten durante **Septiembre - Diciembre 2026** el contexto de **Integración de Aplicaciones con Tecnología Open Source (ISO-815)**, el profesor **Juan Pablo Valdez Reyes** y el mismo equipo de cuatro integrantes:
-
-- Enmanueli Alfonso Rondon Marrero — A00115575;
-- Francis Jairo Matias Rosario — A00115261;
-- Eliandres Rodriguez Cepeda — A00112070;
-- Jorge Alexander Minier Terrero — A00105678.
-
-La relación es **académica y paralela**: BonitaSoft y SOAForge son proyectos independientes, no módulos ni versiones de una misma aplicación.
-
-Para **ISO-810**, SOAForge conserva un equipo distinto de **tres integrantes**: Enmanueli Alfonso Rondon Marrero, Francis Jairo Matias Rosario y Jorge Alexander Minier Terrero. **Eliandres Rodriguez Cepeda no participa en ISO-810.**
+**Tagline:** `CONNECT • INTEGRATE • BUILD • BEYOND`
 
 ---
 
 ## 🎯 Objetivo
 
-Construir un entorno de demostración donde aplicaciones y servicios independientes se integren a través de una capa de gateway y gobierno, permitiendo comparar un enfoque propietario con una alternativa open source bajo un mismo dominio funcional.
+Construir un laboratorio pequeño y reproducible que permita acompañar la presentación de Akana SOA con una demostración de integración empresarial.
 
-Los objetivos técnicos previstos son:
+La demo busca representar, a escala académica:
 
-- separar servicios de negocio;
-- centralizar acceso mediante API Gateway;
-- aplicar autenticación y políticas;
-- documentar contratos de servicio;
-- incorporar gobierno y observabilidad;
-- comparar equivalencias propietarias y open source;
-- preparar un escenario de infraestructura para aproximadamente 500 usuarios;
-- respaldar las presentaciones académicas con una demo reproducible.
+- servicios desacoplados;
+- contratos HTTP/OpenAPI;
+- comunicación service-to-service;
+- API Gateway;
+- políticas de tráfico y seguridad;
+- autenticación y autorización;
+- catálogo/documentación de servicios;
+- logging, métricas y trazabilidad;
+- un escenario de infraestructura para aproximadamente 500 usuarios.
+
+SOAForge **no pretende clonar Akana ni sustituir el producto comercial**. La plataforma Akana se estudia como caso real y la aplicación propia sirve únicamente para demostrar los conceptos arquitectónicos asociados.
 
 ---
 
 ## 🧪 Caso de demostración — NovaCommerce
 
-SOAForge utiliza un dominio empresarial ficticio llamado **NovaCommerce**.
-
-Servicios iniciales previstos:
+La demo utiliza un dominio ficticio llamado **NovaCommerce** con tres capacidades iniciales:
 
 - **Customer Service**;
 - **Order Service**;
@@ -140,8 +101,8 @@ Cliente / Portal
       ▼
    API Gateway
       │
-      ├── Autenticación
-      ├── Políticas
+      ├── Authentication
+      ├── Policies
       ├── Routing
       └── Governance
       │
@@ -157,76 +118,52 @@ Cliente / Portal
  Persistencia + Observabilidad
 </pre>
 
+Flujo de demostración previsto:
+
+1. registrar o consultar un cliente;
+2. crear una orden;
+3. validar el cliente desde Order Service;
+4. registrar un pago;
+5. enrutar el tráfico a través del Gateway;
+6. registrar logs y métricas de la operación.
+
 ---
 
-## 🧱 Stack tecnológico
+## 🧱 Stack objetivo
 
-> **Estado actual:** SOAForge permanece en **Fase 0**. Los siguientes componentes forman parte del **stack objetivo documentado en el roadmap**, pero todavía no deben interpretarse como implementación funcional completada.
+> **Fase 0 completada.** Los siguientes componentes pertenecen a las fases de implementación y todavía no deben interpretarse como funcionalidad terminada.
 
-### ⚙️ Servicios y API — planificado
+### Backend y servicios
 
-<p>
-  <img src="https://skillicons.dev/icons?i=dotnet,cs" alt=".NET y C#" />
-  <img src="https://img.shields.io/badge/OpenAPI-Contratos-85EA2D?style=flat-square&logo=swagger&logoColor=black" alt="OpenAPI" />
-</p>
-
-- solución .NET;
-- servicios Customer, Order y Payment;
-- APIs HTTP documentadas mediante OpenAPI;
-- integración service-to-service;
+- **.NET / ASP.NET Core**;
+- **C#**;
+- **OpenAPI / Swagger**;
+- comunicación HTTP entre servicios;
 - health checks;
 - pruebas automatizadas.
 
-### 🎨 Portal web — planificado
+### Portal
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,ts" alt="React y TypeScript" />
-</p>
-
-- React;
-- TypeScript;
+- **React**;
+- **TypeScript**;
 - catálogo de servicios;
-- documentación de endpoints;
-- visualización de salud y estado;
-- concepto de registro de consumidores/aplicaciones.
+- visualización de endpoints y estado.
 
-### 🗄️ Datos e infraestructura — planificado
+### Integración y gobierno
 
-<p>
-  <img src="https://skillicons.dev/icons?i=postgres,docker,git,github,githubactions" alt="PostgreSQL, Docker, Git, GitHub y GitHub Actions" />
-</p>
-
-- PostgreSQL para el perfil open source;
-- contenedores para el entorno local;
-- perfiles separados de infraestructura propietaria y open source;
-- Git / GitHub;
-- GitHub Actions.
-
-### 🔌 Integración y gobierno
-
-<p>
-  <img src="https://img.shields.io/badge/SOA-Service%20Oriented%20Architecture-2563EB?style=flat-square" alt="SOA" />
-  <img src="https://img.shields.io/badge/Akana-Caso%20acad%C3%A9mico-7C3AED?style=flat-square" alt="Akana" />
-  <img src="https://img.shields.io/badge/API%20Gateway-Planificado-0F766E?style=flat-square" alt="API Gateway planificado" />
-</p>
-
-- **ISO-810:** Akana SOA/API Management como caso académico propietario;
-- **ISO-815:** gateway e identidad open source por seleccionar y validar durante las fases correspondientes;
-- routing centralizado;
-- autenticación/autorización;
+- API Gateway;
 - JWT;
+- autorización;
 - rate limiting;
 - políticas;
-- auditoría.
+- auditoría;
+- observabilidad.
 
-### 📊 Observabilidad — planificada
+### Infraestructura
 
-- logs estructurados;
-- métricas;
-- dashboards;
-- trazabilidad del flujo de solicitudes.
-
-Las herramientas concretas de observabilidad se seleccionarán durante la fase de implementación; el README no presenta una tecnología específica como implementada antes de esa decisión.
+- Docker para la demo local cuando sea necesario;
+- GitHub Actions para CI;
+- topología documentada para el escenario académico de 500 usuarios.
 
 ---
 
@@ -234,10 +171,13 @@ Las herramientas concretas de observabilidad se seleccionarán durante la fase d
 
 <pre>
 SOA-Forge/
+├── assets/
+│   ├── soaforge-logo.svg
+│   ├── soaforge-icon.svg
+│   └── README.md
 ├── docs/
 │   ├── academic/
-│   │   ├── ISO-810/
-│   │   └── ISO-815/
+│   │   └── ISO-810/
 │   ├── architecture/
 │   ├── research/
 │   └── ROADMAP.md
@@ -249,28 +189,29 @@ SOA-Forge/
 │   │   └── PaymentService/
 │   └── Portal/
 ├── infrastructure/
-│   ├── proprietary/
-│   ├── opensource/
-│   └── docker/
 ├── tests/
 └── .github/workflows/ci.yml
 </pre>
 
-El repositorio ya conserva esta separación conceptual, pero el código de aplicación se incorporará progresivamente a partir de **Fase 1**.
-
 ---
 
-## 🔄 Integración continua
+## 🔬 Investigación del primer parcial
 
-Durante Fase 0, el workflow [**ci.yml**](.github/workflows/ci.yml) ejecuta un **quality gate documental** que verifica:
+La investigación de Akana SOA debe cubrir:
 
-- archivos estructurales requeridos;
-- presencia del roadmap;
-- secciones académicas esenciales;
-- referencias a ISO-810 e ISO-815;
-- integridad básica del README.
+1. Introducción al SOA.
+2. Introducción a BPM.
+3. Historia y evolución.
+4. Características principales.
+5. Módulos de la aplicación.
+6. Componentes principales.
+7. Principales competidores.
+8. Hardware y/o appliance para una implementación de 500 usuarios.
+9. Elementos usuales de una solución SOA con la herramienta.
+10. Costos aproximados para 500 usuarios.
+11. Otros aspectos relevantes definidos por el grupo.
 
-Cuando se implemente la solución .NET, el portal y las pruebas, el pipeline deberá evolucionar para ejecutar restore, build, tests, lint y validaciones de infraestructura reales.
+Los datos comerciales, versiones, licencias, costos y requisitos de infraestructura deben documentarse con fuente y fecha de consulta.
 
 ---
 
@@ -278,55 +219,43 @@ Cuando se implemente la solución .NET, el portal y las pruebas, el pipeline deb
 
 | Fase | Alcance | Estado |
 |---:|---|:---:|
-| 0 | Identidad, alcance, arquitectura y estructura | 🟡 En progreso |
-| 1 | Customer, Order y Payment Services | ⏳ |
-| 2 | API Gateway y comunicación SOA | ⏳ |
-| 3 | Autenticación, políticas y governance | ⏳ |
-| 4 | Portal web y catálogo de servicios | ⏳ |
-| 5 | Stack Open Source para ISO-815 | ⏳ |
-| 6 | Observabilidad: logs, métricas y dashboards | ⏳ |
-| 7 | Escenario empresarial para 500 usuarios | ⏳ |
-| 8 | Investigación completa de Akana | ⏳ |
-| 9 | Comparativa propietaria vs. open source | ⏳ |
-| 10 | Presentaciones ISO-810 / ISO-815 y demo final | ⏳ |
+| 0 | Alcance, identidad, estructura y datos académicos | ✅ Completada |
+| 1 | Investigación completa de Akana SOA | ▶️ Siguiente |
+| 2 | Core Services: Customer, Order y Payment | ⏳ |
+| 3 | API Gateway y comunicación SOA | ⏳ |
+| 4 | Seguridad, políticas y governance | ⏳ |
+| 5 | Portal de servicios y observabilidad | ⏳ |
+| 6 | Escenario empresarial para 500 usuarios | ⏳ |
+| 7 | Presentación, demo y cierre académico | ⏳ |
 
-El detalle verificable de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
+El detalle de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
 
 ---
 
 ## 📊 Estado actual
 
-**Fase 0 — Foundation: en progreso.**
+**Fase 0 — Foundation: ✅ completada.**
 
-Ya están definidos:
+Quedaron cerrados el alcance ISO-810, equipo, datos académicos, arquitectura inicial, estructura del repositorio, separación de ISO-815 y la identidad visual definitiva.
 
-- identidad y propósito;
-- separación de los tracks ISO-810 / ISO-815;
-- arquitectura SOA inicial;
-- estructura de repositorio;
-- equipo y participación por asignatura;
-- datos de portada académica.
-
-Según el roadmap actual, resta incorporar los **brand assets finales** para cerrar formalmente la Fase 0.
-
-La implementación funcional comienza en **Fase 1 — Core Services**.
+El proyecto queda listo para entrar a **Fase 1 — Investigación completa de Akana SOA**.
 
 ---
 
 ## 📚 Documentación
 
-- [**docs/ROADMAP.md**](docs/ROADMAP.md) — fases y tareas;
-- [**ISO-810**](docs/academic/ISO-810/) — material de Tecnología Propietaria;
-- [**ISO-815**](docs/academic/ISO-815/) — material de Tecnología Open Source;
-- [**Arquitectura**](docs/architecture/) — decisiones y diagramas;
-- [**Investigación**](docs/research/) — investigación del caso Akana;
-- [**src/README.md**](src/README.md) — estructura prevista de código;
-- [**infrastructure/README.md**](infrastructure/README.md) — perfiles de infraestructura;
-- [**tests/README.md**](tests/README.md) — estrategia de pruebas prevista.
+- [**Roadmap**](docs/ROADMAP.md)
+- [**ISO-810 / Akana SOA**](docs/academic/ISO-810/)
+- [**Arquitectura**](docs/architecture/)
+- [**Investigación**](docs/research/)
+- [**Brand assets**](assets/)
+- [**Código previsto**](src/README.md)
+- [**Infraestructura**](infrastructure/README.md)
+- [**Pruebas**](tests/README.md)
 
 ---
 
 <p align="center">
   <strong>SOAForge · Enterprise Application Integration Lab</strong><br/>
-  Universidad APEC (UNAPEC) · ISO-810 + ISO-815 · Septiembre - Diciembre 2026
+  Universidad APEC (UNAPEC) · ISO-810 · Akana SOA · Septiembre - Diciembre 2026
 </p>
