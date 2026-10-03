@@ -43,13 +43,41 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 | 🧩 Primer parcial | **Akana SOA** |
 | 📁 Entrega | **Investigación + presentación + demo técnica** |
 
-### 👥 Equipo
+### 👥 Equipo académico original
 
-| Integrante | Matrícula |
+| 👤 Integrante | 🆔 Matrícula |
 |---|---|
-| **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
-| **Francis Jairo Matias Rosario** | **A00115261** |
-| **Jorge Alexander Minier Terrero** | **A00105678** |
+| 👨🏻‍💻 **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
+| 👨🏻‍💻 **Francis Jairo Matias Rosario** | **A00115261** |
+| 👨🏻‍💻 **Jorge Alexander Minier Terrero** | **A00105678** |
+
+> **Eliandres Rodriguez Cepeda no forma parte de SOAForge. Su participación corresponde exclusivamente a BonitaSoft / ISO-815.**
+
+---
+
+## 🧭 Continuidad académica
+
+### 👨‍🏫 Continuidad por profesor
+
+El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de Software con Tecnología Open Source 2 (ISO-715)**, asignatura asociada a [**RentCarRD**](https://github.com/Jairo0811/RentCarRD), durante **Mayo - Agosto 2026**. En **Septiembre - Diciembre 2026** continúa como profesor de **SOAForge**, correspondiente a **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)**.
+
+| Orden | Asignatura | Proyecto | Período |
+|---:|---|---|---|
+| 1 | Desarrollo de Software con Tecnología Open Source 2 (ISO-715) | [**RentCarRD**](https://github.com/Jairo0811/RentCarRD) | Mayo - Agosto 2026 |
+| 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
+
+La relación es **docente, formativa y cronológica**. No implica dependencia técnica entre ambos proyectos.
+
+### 🔀 Relación paralela con BonitaSoft
+
+Durante **Septiembre - Diciembre 2026**, SOAForge y [**BonitaSoft**](https://github.com/Jairo0811/BonitaSoft) se desarrollan en paralelo con el mismo profesor, **Juan Pablo Valdez Reyes**, pero pertenecen a asignaturas distintas:
+
+- **SOAForge → ISO-810 — Integración de Aplicaciones con Tecnología Propietaria**;
+- **BonitaSoft → ISO-815 — Integración de Aplicaciones con Tecnología Open Source**.
+
+Comparten tres integrantes: **Enmanueli Alfonso Rondon Marrero**, **Francis Jairo Matias Rosario** y **Jorge Alexander Minier Terrero**.
+
+**Eliandres Rodriguez Cepeda participa únicamente en BonitaSoft / ISO-815 y no pertenece al equipo de SOAForge / ISO-810.**
 
 ---
 
