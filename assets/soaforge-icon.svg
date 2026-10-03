@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">SOAForge icon</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#031020"/><stop offset="1" stop-color="#02050c"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9f3ff"/><stop offset="0.48" stop-color="#46bfff"/><stop offset="1" stop-color="#14518e"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe16f"/><stop offset="0.55" stop-color="#ffad20"/><stop offset="1" stop-color="#d96b00"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <polygon points="256,55 410,144 410,322 256,411 102,322 102,144" fill="#061628" stroke="url(#steel)" stroke-width="10"/>
+  <g fill="none" stroke="#2ccaff" stroke-width="9" stroke-linecap="round" opacity="0.92">
+    <path d="M215 205 H150"/><path d="M215 256 H135"/><path d="M215 307 H150"/>
+    <path d="M297 205 H362"/><path d="M297 256 H377"/><path d="M297 307 H362"/>
+  </g>
+  <g fill="#08192c" stroke="#37cbff" stroke-width="5"><circle cx="127" cy="205" r="25"/><circle cx="112" cy="256" r="25"/><circle cx="127" cy="307" r="25"/><circle cx="385" cy="205" r="25"/><circle cx="400" cy="256" r="25"/><circle cx="385" cy="307" r="25"/></g>
+  <g filter="url(#g)"><path d="M225 180 L256 158 L287 180 V327 L256 360 L225 327 Z" fill="#151f2d" stroke="url(#gold)" stroke-width="7"/><rect x="243" y="199" width="26" height="125" rx="7" fill="url(#gold)"/></g>
+</svg>
