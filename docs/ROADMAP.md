@@ -13,18 +13,20 @@ SOAForge corresponde exclusivamente a **ISO-810 — Integración de Aplicaciones
 
 **Status:** Completed.
 
-## Phase 1 — Akana SOA Research
-- [ ] Introducción al SOA.
-- [ ] Introducción a BPM.
-- [ ] Historia y evolución de Akana.
-- [ ] Características principales.
-- [ ] Módulos de la plataforma.
-- [ ] Componentes principales.
-- [ ] Principales competidores.
-- [ ] Infraestructura para 500 usuarios.
-- [ ] Elementos usuales de una solución SOA con Akana.
-- [ ] Costos aproximados para 500 usuarios.
-- [ ] Aspectos adicionales y fuentes.
+## Phase 1 — Akana SOA Research ✅
+- [x] Introducción al SOA.
+- [x] Introducción a BPM.
+- [x] Historia y evolución de Akana.
+- [x] Características principales.
+- [x] Módulos de la plataforma.
+- [x] Componentes principales.
+- [x] Principales competidores.
+- [x] Infraestructura para 500 usuarios.
+- [x] Elementos usuales de una solución SOA con Akana.
+- [x] Costos aproximados para 500 usuarios, diferenciando cotización comercial y estimación técnica.
+- [x] Aspectos adicionales y fuentes.
+
+**Status:** Completed. See `docs/research/AKANA-SOA-RESEARCH.md`.
 
 ## Phase 2 — Core Services Demo
 - [ ] Create .NET solution.

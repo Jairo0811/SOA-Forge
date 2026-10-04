@@ -1,30 +1,17 @@
 # Research Index
 
-Esta carpeta concentra la investigación del primer parcial de **ISO-810 — Integración de Aplicaciones con Tecnología Propietaria**.
+Esta carpeta concentra la investigación académica de **SOAForge / ISO-810 / Akana SOA**.
 
-## Caso principal
+## Investigación principal
 
-**Akana SOA**
+- [**Akana SOA — Investigación del Primer Parcial**](AKANA-SOA-RESEARCH.md)
 
-## Topics
-
-- SOA fundamentals
-- BPM fundamentals
-- Akana history and evolution
-- Akana modules and components
-- API management and governance
-- service lifecycle
-- policies and security
-- competitors
-- enterprise deployment for a 500-user scenario
-- licensing and cost analysis
-- typical solution elements
-- SOAP vs REST where relevant
-- SOA and API Management relationship
-- observability and operational governance
+La investigación principal cubre los 11 puntos solicitados: SOA, BPM, historia, características, módulos, componentes, competidores, escenario de 500 usuarios, elementos usuales, costos y aspectos adicionales.
 
 ## Research rule
 
-Los datos sobre fabricante, propiedad del producto, versiones, licencias, precios, capacidades comerciales y requisitos de infraestructura deberán acompañarse de fuente y fecha de consulta.
+Los datos sobre fabricantes, propiedad, licencias, versiones, precios, capacidades comerciales y requisitos de infraestructura deben acompañarse de fuente y fecha de consulta.
 
-Las estimaciones de costos o capacidad se identificarán explícitamente como tales y se separarán de cualquier cifra oficial publicada.
+Cuando el fabricante no publique un dato —por ejemplo, una tarifa pública de licencia— el documento debe indicar **“cotización requerida / no publicado”** en vez de inventar una cifra.
+
+Las propuestas de sizing o infraestructura creadas por el equipo deben identificarse como **estimaciones académicas**, separadas de los requisitos mínimos oficiales del fabricante.
