@@ -290,7 +290,7 @@ function App() {
             <div className="user-chip">
               <span className="avatar"><FaIcon name="fa-user" /></span>
               <div>
-                <strong>demo</strong>
+                <strong>Equipo ISO-810</strong>
                 <span>Rol: operator</span>
               </div>
               <FaIcon name="fa-chevron-down" />
