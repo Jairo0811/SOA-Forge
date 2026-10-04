@@ -1,0 +1,57 @@
+.brand {
+  position: relative;
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2px 8px;
+}
+
+.brand::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 96px;
+  background-image: url('/soaforge-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 10px 24px rgba(16, 108, 210, .18));
+}
+
+.brand .brand-mark {
+  display: none;
+}
+
+.brand > div {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 860px) {
+  .brand {
+    min-height: 94px;
+    padding-bottom: 6px;
+  }
+
+  .brand::before {
+    height: 86px;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand {
+    min-height: 88px;
+  }
+
+  .brand::before {
+    height: 80px;
+  }
+}
