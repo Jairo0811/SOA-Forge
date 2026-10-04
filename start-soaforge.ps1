@@ -10,10 +10,16 @@ if ([string]::IsNullOrWhiteSpace($repoRoot)) {
     $repoRoot = (Get-Location).Path
 }
 
+$runtimeRoot = Join-Path $env:TEMP 'SOAForge'
+$logsRoot = Join-Path $runtimeRoot 'logs'
+$runtimeFile = Join-Path $runtimeRoot 'runtime.json'
+
+New-Item -ItemType Directory -Path $logsRoot -Force | Out-Null
+
 function Start-SOAForgeProcess {
     param(
         [Parameter(Mandatory = $true)]
-        [string]$Title,
+        [string]$Name,
 
         [Parameter(Mandatory = $true)]
         [string]$WorkingDirectory,
@@ -22,30 +28,43 @@ function Start-SOAForgeProcess {
         [string]$Command
     )
 
-    $safeTitle = $Title.Replace("'", "''")
-
     $bootstrap = @"
-`$Host.UI.RawUI.WindowTitle = '$safeTitle'
 `$ErrorActionPreference = 'Stop'
 $Command
 "@
 
     # Windows PowerShell expects EncodedCommand as UTF-16LE.
-    # This avoids quoting issues with paths that contain spaces (for example OneDrive folders).
+    # Using a hidden child process keeps all five services running without
+    # opening five additional terminal windows.
     $encodedCommand = [Convert]::ToBase64String(
         [Text.Encoding]::Unicode.GetBytes($bootstrap)
     )
 
-    Start-Process `
+    $stdout = Join-Path $logsRoot ("{0}.out.log" -f $Name)
+    $stderr = Join-Path $logsRoot ("{0}.err.log" -f $Name)
+
+    Remove-Item $stdout, $stderr -Force -ErrorAction SilentlyContinue
+
+    $process = Start-Process `
         -FilePath 'powershell.exe' `
         -WorkingDirectory $WorkingDirectory `
         -ArgumentList @(
-            '-NoExit',
             '-NoLogo',
+            '-NoProfile',
             '-ExecutionPolicy', 'Bypass',
             '-EncodedCommand', $encodedCommand
         ) `
+        -WindowStyle Hidden `
+        -RedirectStandardOutput $stdout `
+        -RedirectStandardError $stderr `
         -PassThru
+
+    return [pscustomobject]@{
+        Name = $Name
+        Id = $process.Id
+        StdOut = $stdout
+        StdErr = $stderr
+    }
 }
 
 function Wait-SOAForgeEndpoint {
@@ -104,28 +123,28 @@ foreach ($path in $requiredPaths) {
 }
 
 Write-Host ''
-Write-Host 'SOAForge - iniciando stack local...' -ForegroundColor Cyan
+Write-Host 'SOAForge - iniciando stack local en segundo plano...' -ForegroundColor Cyan
 Write-Host ''
 
 $processes = @()
 
 $processes += Start-SOAForgeProcess `
-    -Title 'SOAForge - CustomerService :5101' `
+    -Name 'CustomerService' `
     -WorkingDirectory $customerPath `
     -Command "`$env:ASPNETCORE_ENVIRONMENT='Development'; `$env:ASPNETCORE_URLS='http://localhost:5101'; dotnet run --no-launch-profile"
 
 $processes += Start-SOAForgeProcess `
-    -Title 'SOAForge - OrderService :5102' `
+    -Name 'OrderService' `
     -WorkingDirectory $orderPath `
     -Command "`$env:ASPNETCORE_ENVIRONMENT='Development'; `$env:ASPNETCORE_URLS='http://localhost:5102'; dotnet run --no-launch-profile"
 
 $processes += Start-SOAForgeProcess `
-    -Title 'SOAForge - PaymentService :5103' `
+    -Name 'PaymentService' `
     -WorkingDirectory $paymentPath `
     -Command "`$env:ASPNETCORE_ENVIRONMENT='Development'; `$env:ASPNETCORE_URLS='http://localhost:5103'; dotnet run --no-launch-profile"
 
 $processes += Start-SOAForgeProcess `
-    -Title 'SOAForge - Gateway :5100' `
+    -Name 'Gateway' `
     -WorkingDirectory $gatewayPath `
     -Command "`$env:ASPNETCORE_ENVIRONMENT='Development'; `$env:ASPNETCORE_URLS='http://localhost:5100'; dotnet run --no-launch-profile"
 
@@ -137,9 +156,14 @@ else {
 }
 
 $processes += Start-SOAForgeProcess `
-    -Title 'SOAForge - Portal :5173' `
+    -Name 'Portal' `
     -WorkingDirectory $portalPath `
     -Command $portalCommand
+
+@{
+    StartedAt = (Get-Date).ToString('o')
+    Processes = $processes
+} | ConvertTo-Json -Depth 5 | Set-Content -Path $runtimeFile -Encoding UTF8
 
 Write-Host 'Esperando que los 5 procesos queden disponibles...' -ForegroundColor Yellow
 Write-Host ''
@@ -160,11 +184,13 @@ if ($checks -notcontains $false) {
     Write-Host '  OrderService     http://localhost:5102'
     Write-Host '  PaymentService   http://localhost:5103'
     Write-Host '  Portal           http://localhost:5173'
+    Write-Host ''
+    Write-Host 'Los 5 procesos estan ejecutandose ocultos en segundo plano.' -ForegroundColor DarkGray
+    Write-Host "Logs: $logsRoot" -ForegroundColor DarkGray
+    Write-Host 'Para detener todo: .\stop-soaforge.ps1' -ForegroundColor DarkGray
 }
 else {
     Write-Host 'SOAForge inicio con errores.' -ForegroundColor Red
-    Write-Host 'Revisa la ventana del proceso marcado como [ERROR]; ahora permanecera abierta mostrando el error real.' -ForegroundColor Yellow
+    Write-Host "Revisa los logs en: $logsRoot" -ForegroundColor Yellow
+    Write-Host 'Para detener los procesos iniciados: .\stop-soaforge.ps1' -ForegroundColor Yellow
 }
-
-Write-Host ''
-Write-Host 'Se abrieron 5 ventanas de PowerShell. Cierra cada una para detener su proceso.' -ForegroundColor DarkGray
