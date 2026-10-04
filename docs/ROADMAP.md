@@ -8,7 +8,7 @@ SOAForge corresponde exclusivamente a **ISO-810 — Integración de Aplicaciones
 - [x] Confirm team members.
 - [x] Complete academic metadata.
 - [x] Define initial SOA demo architecture.
-- [x] Separate SOAForge from the ISO-815 project.
+- [x] Separate SOAForge from the open-source integration project.
 - [x] Add final brand assets.
 
 **Status:** Completed.
@@ -37,30 +37,36 @@ SOAForge corresponde exclusivamente a **ISO-810 — Integración de Aplicaciones
 - [x] Add service-to-service integration.
 - [x] Add automated tests.
 
-**Status:** Completed. GitHub Actions validated restore, Release build and automated tests on .NET 10.
+**Status:** Completed and validated by CI.
 
-## Phase 3 — API Gateway and SOA Integration
-- [ ] Centralize routing through the gateway.
-- [ ] Add health checks.
-- [ ] Introduce versioned routes.
-- [ ] Add basic traffic policies.
-- [ ] Demonstrate gateway-mediated access.
+## Phase 3 — API Gateway and SOA Integration ✅
+- [x] Centralize routing through the gateway.
+- [x] Add health checks.
+- [x] Introduce versioned routes.
+- [x] Add basic traffic policies.
+- [x] Demonstrate gateway-mediated access.
 
-## Phase 4 — Security and Governance
-- [ ] Authentication and authorization.
-- [ ] JWT validation.
-- [ ] Rate limiting.
-- [ ] Policy documentation.
-- [ ] Audit logging.
-- [ ] Document how each concept maps to the Akana research case.
+**Status:** Completed with ASP.NET Core + YARP.
 
-## Phase 5 — Service Portal and Observability
-- [ ] React + TypeScript portal.
-- [ ] Service catalog.
-- [ ] Endpoint documentation.
-- [ ] Health and status view.
-- [ ] Structured logs.
-- [ ] Metrics and request tracing.
+## Phase 4 — Security and Governance ✅
+- [x] Authentication and authorization.
+- [x] JWT validation.
+- [x] Rate limiting.
+- [x] Policy documentation.
+- [x] Audit logging.
+- [x] Document how each concept maps to the Akana research case.
+
+**Status:** Completed. See `docs/governance/`.
+
+## Phase 5 — Service Portal and Observability ✅
+- [x] React + TypeScript portal.
+- [x] Service catalog.
+- [x] Endpoint documentation.
+- [x] Health and status view.
+- [x] Structured logs.
+- [x] Metrics and request tracing.
+
+**Status:** Completed. Portal build and .NET implementation are validated by CI.
 
 ## Phase 6 — 500-user Enterprise Scenario
 - [ ] Define capacity assumptions.

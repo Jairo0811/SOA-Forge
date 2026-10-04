@@ -1,17 +1,29 @@
 # Tests
 
-Phase 2 incorpora pruebas automatizadas en:
+La suite automatizada vive en:
 
 `tests/SOAForge.Core.Tests/`
 
-La suite valida el comportamiento base de los repositorios de Customer, Order y Payment.
+## Cobertura actual
 
-## Ejecutar
+- CustomerRepository seed y creación.
+- OrderRepository persistencia y estado inicial.
+- PaymentRepository persistencia y aprobación.
+- generación de JWT del Gateway.
+- métricas del Gateway.
+
+## Ejecutar backend tests
 
 ```bash
 dotnet test SOAForge.slnx --configuration Release
 ```
 
-GitHub Actions ejecuta restore, build y tests en cada pull request hacia `main`.
+## Validación frontend
 
-Las pruebas de gateway, seguridad y end-to-end se ampliarán en fases posteriores.
+```bash
+cd src/Portal
+npm install
+npm run build
+```
+
+GitHub Actions valida documentación, restore/build/tests de .NET 10 y build del portal React.

@@ -1,39 +1,63 @@
-@customer = http://localhost:5101
-@order = http://localhost:5102
-@payment = http://localhost:5103
+@gateway = http://localhost:5100
+@customerService = http://localhost:5101
+@orderService = http://localhost:5102
+@paymentService = http://localhost:5103
+@token = paste-jwt-here
 
-### Health — Customer
-GET {{customer}}/health
+### 1. Gateway health
+GET {{gateway}}/health
 
-### List seeded customers
-GET {{customer}}/api/customers
+### 2. Aggregated service health
+GET {{gateway}}/health/services
 
-### Create customer
-POST {{customer}}/api/customers
+### 3. Service catalog
+GET {{gateway}}/catalog
+
+### 4. Request demo JWT
+POST {{gateway}}/auth/token
 Content-Type: application/json
 
 {
-  "name": "Nova Customer",
-  "email": "nova@example.com"
+  "username": "demo",
+  "password": "SOAForge2026!"
 }
 
-### Create order using seeded customer Ana
-POST {{order}}/api/orders
+### Copy accessToken from the previous response into @token.
+
+### 5. List customers through Gateway
+GET {{gateway}}/api/v1/customers
+Authorization: Bearer {{token}}
+X-Correlation-ID: demo-customers-001
+
+### 6. Create customer through Gateway
+POST {{gateway}}/api/v1/customers
+Authorization: Bearer {{token}}
 Content-Type: application/json
+X-Correlation-ID: demo-customer-create-001
 
 {
-  "customerId": "11111111-1111-1111-1111-111111111111",
-  "total": 2450.00
+  "name": "SOAForge Demo",
+  "email": "demo@novacommerce.local"
 }
 
-### List orders
-GET {{order}}/api/orders
+### 7. List orders through Gateway
+GET {{gateway}}/api/v1/orders
+Authorization: Bearer {{token}}
+X-Correlation-ID: demo-orders-001
 
-### Payment requires an OrderId returned by POST /api/orders
-# POST {{payment}}/api/payments
-# Content-Type: application/json
-#
-# {
-#   "orderId": "PUT-ORDER-ID-HERE",
-#   "amount": 2450.00
-# }
+### 8. List payments through Gateway
+GET {{gateway}}/api/v1/payments
+Authorization: Bearer {{token}}
+X-Correlation-ID: demo-payments-001
+
+### 9. Gateway metrics
+GET {{gateway}}/observability/metrics
+
+### Direct upstream checks remain available for troubleshooting only.
+GET {{customerService}}/health
+
+###
+GET {{orderService}}/health
+
+###
+GET {{paymentService}}/health
