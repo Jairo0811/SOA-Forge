@@ -5,7 +5,7 @@
 <br/>
 
 <img src="https://img.shields.io/badge/Primer%20Parcial-Akana%20SOA-7C3AED?style=for-the-badge" alt="Primer parcial: Akana SOA" />
-<img src="https://img.shields.io/badge/Fases%200--2-Completadas-22C55E?style=for-the-badge" alt="Fases 0 a 2 completadas" />
+<img src="https://img.shields.io/badge/Fases%200--5-Completadas-22C55E?style=for-the-badge" alt="Fases 0 a 5 completadas" />
 
 <br/><br/>
 
@@ -17,7 +17,7 @@
 
 **Enterprise Application Integration Lab**
 
-*SOA · API Management · Governance · Integration · Observability*
+*SOA · API Management · Governance · Security · Observability*
 
 </div>
 
@@ -25,9 +25,9 @@
 
 **SOAForge** es el proyecto académico del primer parcial de **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)** en UNAPEC.
 
-El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación de la plataforma y una demostración técnica propia para ilustrar conceptos de arquitectura orientada a servicios, contratos, APIs, gateway, políticas, gobierno y observabilidad.
+El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación académica de la plataforma y una demo propia llamada **NovaCommerce** para ilustrar contratos, integración service-to-service, gateway, policies, seguridad, catálogo y observabilidad.
 
-> SOAForge es exclusivamente el proyecto de **ISO-810 / Akana SOA**. Los trabajos de integración con tecnología open source se mantienen en un repositorio independiente.
+> SOAForge no ejecuta ni clona Akana. La correspondencia con Akana es conceptual y está documentada explícitamente.
 
 ---
 
@@ -46,197 +46,136 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 
 | 👤 Integrante | 🆔 Matrícula |
 |---|---|
-| 👨🏻‍💻 **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
-| 👨🏻‍💻 **Francis Jairo Matias Rosario** | **A00115261** |
-| 👨🏻‍💻 **Jorge Alexander Minier Terrero** | **A00105678** |
-
----
-
-## 🧭 Continuidad académica
-
-### 👨‍🏫 Continuidad por profesor
-
-El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de Software con Tecnología Open Source 2 (ISO-715)**, asignatura asociada a [**RentCarRD**](https://github.com/Jairo0811/RentCarRD), durante **Mayo - Agosto 2026**. En **Septiembre - Diciembre 2026** continúa como profesor de **SOAForge**, correspondiente a **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)**.
-
-| Orden | Asignatura | Proyecto | Período |
-|---:|---|---|---|
-| 1 | Desarrollo de Software con Tecnología Open Source 2 (ISO-715) | [**RentCarRD**](https://github.com/Jairo0811/RentCarRD) | Mayo - Agosto 2026 |
-| 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
-
-La relación es **docente, formativa y cronológica**. No implica dependencia técnica entre ambos proyectos.
-
----
-
-## 🎨 Identidad visual
-
-La Fase 0 incorpora la identidad visual definitiva de SOAForge:
-
-- [**Logo principal**](assets/soaforge-logo.svg)
-- [**Ícono**](assets/soaforge-icon.svg)
-- [**Guía de marca**](assets/README.md)
-
-El concepto combina un **portal/gateway central**, nodos de servicios empresariales y una paleta **azul/cian + ámbar/dorado** para representar integración, interoperabilidad y la idea de *forge*.
-
-**Tagline:** `CONNECT • INTEGRATE • BUILD • BEYOND`
+| **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
+| **Francis Jairo Matias Rosario** | **A00115261** |
+| **Jorge Alexander Minier Terrero** | **A00105678** |
 
 ---
 
 ## 🎯 Objetivo
 
-Construir un laboratorio pequeño y reproducible que permita acompañar la presentación de Akana SOA con una demostración de integración empresarial.
+Construir un laboratorio reproducible que acompañe la presentación de Akana SOA con una implementación propia de los conceptos técnicos más importantes de una plataforma de integración empresarial.
 
-La demo busca representar, a escala académica:
+SOAForge demuestra:
 
 - servicios desacoplados;
 - contratos HTTP/OpenAPI;
-- comunicación service-to-service;
-- API Gateway;
-- políticas de tráfico y seguridad;
-- autenticación y autorización;
-- catálogo/documentación de servicios;
-- logging, métricas y trazabilidad;
-- un escenario de infraestructura para aproximadamente 500 usuarios.
-
-SOAForge **no pretende clonar Akana ni sustituir el producto comercial**. La plataforma Akana se estudia como caso real y la aplicación propia sirve únicamente para demostrar los conceptos arquitectónicos asociados.
-
----
-
-## 🧪 Caso de demostración — NovaCommerce
-
-La demo utiliza un dominio ficticio llamado **NovaCommerce** con tres capacidades iniciales:
-
-- **Customer Service**;
-- **Order Service**;
-- **Payment Service**.
-
-<pre>
-Cliente / Portal
-      │
-      ▼
-   API Gateway
-      │
-      ├── Authentication
-      ├── Policies
-      ├── Routing
-      └── Governance
-      │
-      ▼
-┌───────────────────────────┐
-│       Servicios SOA       │
-│  Customer Service         │
-│  Order Service            │
-│  Payment Service          │
-└─────────────┬─────────────┘
-              │
-              ▼
- Persistencia + Observabilidad
-</pre>
-
-Flujo de demostración previsto:
-
-1. registrar o consultar un cliente;
-2. crear una orden;
-3. validar el cliente desde Order Service;
-4. registrar un pago;
-5. enrutar el tráfico a través del Gateway;
-6. registrar logs y métricas de la operación.
-
-Los puntos 1–4 ya forman parte de **Phase 2**. Los puntos 5–6 corresponden a las fases siguientes.
-
----
-
-## 🧱 Stack objetivo
-
-> **Fases 0, 1 y 2 completadas.** El núcleo de servicios ya está implementado y validado por CI. Gateway, seguridad, portal y observabilidad se incorporarán en las fases siguientes.
-
-### Backend y servicios — ✅ implementado en Phase 2
-
-- **.NET 10 / ASP.NET Core**;
-- **C#**;
-- **OpenAPI**;
-- Customer Service;
-- Order Service;
-- Payment Service;
-- comunicación HTTP service-to-service;
-- repositorios in-memory para la demo inicial;
-- pruebas automatizadas con xUnit.
-
-### Portal — planificado
-
-- **React**;
-- **TypeScript**;
+- integración service-to-service;
+- API Gateway central;
+- rutas externas versionadas;
+- JWT y autorización;
+- rate limiting y policies;
 - catálogo de servicios;
-- visualización de endpoints y estado.
-
-### Integración y gobierno — siguiente
-
-- API Gateway;
-- JWT;
-- autorización;
-- rate limiting;
-- políticas;
-- auditoría;
-- observabilidad.
-
-### Infraestructura
-
-- Docker para la demo local cuando sea necesario;
-- GitHub Actions para CI;
-- topología documentada para el escenario académico de 500 usuarios.
+- health agregado;
+- structured logging;
+- correlation ID y trace ID;
+- métricas operativas;
+- portal de servicios React/TypeScript.
 
 ---
 
-## 🏗️ Arquitectura objetivo
+## 🧪 NovaCommerce
 
-<pre>
-SOA-Forge/
-├── assets/
-│   ├── soaforge-logo.svg
-│   ├── soaforge-icon.svg
-│   └── README.md
-├── demo/
-│   └── NovaCommerce.http
-├── docs/
-│   ├── academic/
-│   │   └── ISO-810/
-│   ├── architecture/
-│   ├── research/
-│   └── ROADMAP.md
-├── src/
-│   ├── Gateway/
-│   ├── Services/
-│   │   ├── CustomerService/
-│   │   ├── OrderService/
-│   │   └── PaymentService/
-│   └── Portal/
-├── infrastructure/
-├── tests/
-│   └── SOAForge.Core.Tests/
-├── SOAForge.slnx
-└── .github/workflows/ci.yml
-</pre>
+```text
+                    ┌─────────────────────┐
+                    │ React Service Portal│ :5173
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ SOAForge.Gateway    │ :5100
+                    │ YARP                │
+                    │ JWT / Policies      │
+                    │ Logs / Metrics      │
+                    └──────────┬──────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+      CustomerService     OrderService      PaymentService
+          :5101              :5102              :5103
+```
+
+El flujo conserva las validaciones remotas implementadas en Phase 2: OrderService consulta CustomerService y PaymentService consulta OrderService.
 
 ---
 
-## 🔬 Investigación del primer parcial
+## 🧱 Stack implementado
 
-La investigación de Akana SOA cubre:
+### Core services
 
-1. Introducción al SOA.
-2. Introducción a BPM.
-3. Historia y evolución.
-4. Características principales.
-5. Módulos de la aplicación.
-6. Componentes principales.
-7. Principales competidores.
-8. Hardware y/o appliance para una implementación de 500 usuarios.
-9. Elementos usuales de una solución SOA con la herramienta.
-10. Costos aproximados para 500 usuarios.
-11. Otros aspectos relevantes definidos por el grupo.
+- **.NET 10 / ASP.NET Core**
+- **C#**
+- **OpenAPI**
+- CustomerService, OrderService y PaymentService
+- xUnit
 
-Los datos comerciales, versiones, licencias, costos y requisitos de infraestructura se documentan con fuente y fecha de consulta. Cuando Akana/Perforce no publica un precio o sizing exacto, la documentación lo diferencia expresamente de las estimaciones académicas.
+### Gateway, Security & Governance
 
-Documento principal: [**Akana SOA — Investigación del Primer Parcial**](docs/research/AKANA-SOA-RESEARCH.md).
+- **YARP 2.3.0**
+- JWT Bearer
+- authorization policy `gateway`
+- 60 requests/minuto como policy académica inicial
+- rutas `/api/v1/*`
+- health agregado
+- correlation y trace IDs
+- structured request logs
+- métricas ligeras del Gateway
+
+### Service Portal
+
+- **React 19**
+- **TypeScript**
+- **Vite**
+- catálogo de servicios
+- health/status
+- endpoint documentation
+- métricas
+- token JWT de demostración
+
+---
+
+## 🚀 Ejecución local
+
+Primero inicie los cuatro proyectos .NET:
+
+```bash
+dotnet run --project src/Services/CustomerService
+dotnet run --project src/Services/OrderService
+dotnet run --project src/Services/PaymentService
+dotnet run --project src/Gateway
+```
+
+Luego el portal:
+
+```bash
+cd src/Portal
+npm install
+npm run dev
+```
+
+Use `demo/NovaCommerce.http` para recorrer el flujo mediante el Gateway.
+
+### Credenciales de demo
+
+- usuario: `demo`
+- contraseña: `SOAForge2026!`
+
+Estas credenciales y la signing key del repositorio son exclusivamente para ejecución académica local.
+
+---
+
+## 🔐 Governance
+
+Las reglas vigentes están en [**docs/governance/POLICIES.md**](docs/governance/POLICIES.md).
+
+La relación conceptual entre la demo y Akana está en [**docs/governance/AKANA-MAPPING.md**](docs/governance/AKANA-MAPPING.md).
+
+---
+
+## 🔬 Investigación
+
+La investigación completa del primer parcial está en [**docs/research/AKANA-SOA-RESEARCH.md**](docs/research/AKANA-SOA-RESEARCH.md) y cubre los 11 puntos solicitados: SOA, BPM, historia y evolución, características, módulos, componentes, competidores, infraestructura para 500 usuarios, elementos usuales, costos y aspectos adicionales.
 
 ---
 
@@ -244,42 +183,38 @@ Documento principal: [**Akana SOA — Investigación del Primer Parcial**](docs/
 
 | Fase | Alcance | Estado |
 |---:|---|:---:|
-| 0 | Alcance, identidad, estructura y datos académicos | ✅ Completada |
+| 0 | Foundation | ✅ Completada |
 | 1 | Investigación completa de Akana SOA | ✅ Completada |
-| 2 | Core Services: Customer, Order y Payment | ✅ Completada |
-| 3 | API Gateway y comunicación SOA | ▶️ Siguiente |
-| 4 | Seguridad, políticas y governance | ⏳ |
-| 5 | Portal de servicios y observabilidad | ⏳ |
-| 6 | Escenario empresarial para 500 usuarios | ⏳ |
+| 2 | Core Services | ✅ Completada |
+| 3 | API Gateway y comunicación SOA | ✅ Completada |
+| 4 | Seguridad, políticas y governance | ✅ Completada |
+| 5 | Portal de servicios y observabilidad | ✅ Completada |
+| 6 | Escenario empresarial para 500 usuarios | ▶️ Siguiente |
 | 7 | Presentación, demo y cierre académico | ⏳ |
 
-El detalle de tareas se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
+El detalle se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
 
 ---
 
 ## 📊 Estado actual
 
-**Fases 0–2: ✅ completadas.**
+**Fases 0–5: ✅ completadas en la rama de implementación.**
 
-SOAForge ya cuenta con foundation y branding, investigación completa de Akana SOA y el núcleo programado de NovaCommerce con **CustomerService, OrderService y PaymentService**, OpenAPI, comunicación HTTP entre servicios y pruebas automatizadas.
-
-GitHub Actions valida **restore, build Release y tests sobre .NET 10**, además del quality gate documental.
-
-La siguiente etapa es **Phase 3 — API Gateway and SOA Integration**.
+El quality gate de GitHub Actions valida documentación, solución .NET 10, pruebas automatizadas y build del portal. La próxima etapa es **Phase 6 — 500-user Enterprise Scenario**.
 
 ---
 
 ## 📚 Documentación
 
-- [**Roadmap**](docs/ROADMAP.md)
-- [**ISO-810 / Akana SOA**](docs/academic/ISO-810/)
-- [**Investigación completa de Akana**](docs/research/AKANA-SOA-RESEARCH.md)
-- [**Arquitectura**](docs/architecture/)
-- [**Phase 2 — Core Services**](docs/architecture/PHASE-2-CORE-SERVICES.md)
-- [**Brand assets**](assets/)
-- [**Código**](src/README.md)
-- [**Infraestructura**](infrastructure/README.md)
-- [**Pruebas**](tests/README.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Akana SOA Research](docs/research/AKANA-SOA-RESEARCH.md)
+- [Architecture](docs/architecture/)
+- [Phases 3–5](docs/architecture/PHASE-3-5-GATEWAY-GOVERNANCE-PORTAL.md)
+- [Governance Policies](docs/governance/POLICIES.md)
+- [Akana Mapping](docs/governance/AKANA-MAPPING.md)
+- [Gateway](src/Gateway/README.md)
+- [Portal](src/Portal/README.md)
+- [Tests](tests/README.md)
 
 ---
 

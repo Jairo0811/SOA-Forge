@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../src/Gateway/SOAForge.Gateway.csproj" />
     <ProjectReference Include="../../src/Services/CustomerService/CustomerService.csproj" />
     <ProjectReference Include="../../src/Services/OrderService/OrderService.csproj" />
     <ProjectReference Include="../../src/Services/PaymentService/PaymentService.csproj" />

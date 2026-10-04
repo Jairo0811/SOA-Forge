@@ -2,59 +2,55 @@
 
 SOAForge adopta una arquitectura orientada a servicios para respaldar la presentación de **Akana SOA** en ISO-810.
 
-## Target architecture
+## Implemented architecture — Phases 0–5
 
 ```text
-                       ┌──────────────────────┐
-                       │   Web / Consumers    │
-                       └──────────┬───────────┘
-                                  │
-                                  ▼
-                       ┌──────────────────────┐
-                       │      API Gateway     │
-                       │ routing · policies   │
-                       │ auth · rate limits   │
-                       └──────────┬───────────┘
-                                  │
-             ┌────────────────────┼────────────────────┐
-             │                    │                    │
-             ▼                    ▼                    ▼
-    ┌────────────────┐   ┌────────────────┐   ┌────────────────┐
-    │ Customer       │   │ Order          │   │ Payment        │
-    │ Service        │   │ Service        │   │ Service        │
-    └────────────────┘   └────────────────┘   └────────────────┘
-             │                    │                    │
-             └────────────────────┼────────────────────┘
-                                  ▼
-                       Data / Logs / Metrics
+                    ┌─────────────────────┐
+                    │ React Service Portal│ :5173
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ SOAForge.Gateway    │ :5100
+                    │ YARP                │
+                    │ JWT / Authorization │
+                    │ Rate limiting       │
+                    │ Audit / Metrics     │
+                    └──────────┬──────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+    ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+    │ Customer       │ │ Order          │ │ Payment        │
+    │ Service :5101  │ │ Service :5102  │ │ Service :5103  │
+    └────────────────┘ └────────────────┘ └────────────────┘
+             │                 │                 │
+             └──── HTTP contracts + trace headers ─────────┘
 ```
 
 ## Principles
 
 1. **Service autonomy** — cada capacidad de negocio mantiene su frontera.
-2. **Explicit contracts** — la integración se expone mediante contratos documentados.
+2. **Explicit contracts** — la integración se expone mediante HTTP/OpenAPI.
 3. **Loose coupling** — los consumidores dependen del contrato y no de la implementación interna.
-4. **Gateway-mediated access** — el tráfico externo pasa por un punto de control.
-5. **Policy enforcement** — autenticación, autorización, límites y reglas se aplican de forma explícita.
-6. **Observability by design** — las solicitudes deben poder rastrearse entre servicios.
-7. **Akana mapping** — la documentación indicará qué concepto de la demo corresponde a capacidades estudiadas en Akana, sin afirmar que la demo ejecuta Akana.
+4. **Gateway-mediated access** — el contrato externo pasa por YARP.
+5. **Policy enforcement** — JWT, autorización y rate limiting se aplican en el borde.
+6. **Observability by design** — correlation ID, trace ID, logs y métricas permiten seguir operaciones.
+7. **Versioned edge contract** — `/api/v1/*` desacopla la interfaz pública de la ruta interna.
+8. **Akana mapping** — la demo se relaciona conceptualmente con las capacidades estudiadas en Akana sin afirmar que ejecuta Akana.
 
-## Initial domain
+## Domain
 
-### Customer Service
-Gestiona clientes y consultas de identidad de negocio.
+- **CustomerService:** clientes y consultas de identidad comercial.
+- **OrderService:** órdenes y validación remota del cliente.
+- **PaymentService:** pagos y validación remota de la orden.
+- **SOAForge.Gateway:** routing, seguridad, policies, catálogo y observabilidad.
+- **Service Portal:** visualización académica de catálogo, health, contratos y métricas.
 
-### Order Service
-Gestiona órdenes y valida la existencia del cliente antes de crear una orden.
+## Documents
 
-### Payment Service
-Gestiona pagos y estados de pago asociados a órdenes.
-
-## First integration scenario
-
-1. Se crea o consulta un cliente.
-2. Se solicita la creación de una orden.
-3. Order Service consulta Customer Service.
-4. Se registra un pago contra la orden.
-5. El acceso externo se enruta mediante el Gateway.
-6. La operación queda registrada para observabilidad y auditoría.
+- `PHASE-2-CORE-SERVICES.md`
+- `PHASE-3-5-GATEWAY-GOVERNANCE-PORTAL.md`
+- `../governance/POLICIES.md`
+- `../governance/AKANA-MAPPING.md`
