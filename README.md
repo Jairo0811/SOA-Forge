@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/soaforge-logo.svg" alt="SOAForge — Enterprise Application Integration Lab" width="100%" />
+<img src="assets/soaforge-logo.png" alt="SOAForge — Enterprise Application Integration Lab" width="100%" />
 
 <br/>
 
