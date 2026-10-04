@@ -7,6 +7,7 @@ on:
     branches:
       - main
       - feat/phases-1-2-akana-core
+      - feat/phases-3-5-gateway-governance-portal
 
 jobs:
   documentation:
@@ -23,12 +24,20 @@ jobs:
           test -f README.md
           test -f docs/ROADMAP.md
           test -f docs/academic/ISO-810/README.md
+          test -f docs/academic/ISO-810/DEMO-SCRIPT.md
+          test -f docs/academic/ISO-810/PRESENTATION-OUTLINE.md
           test -f docs/architecture/README.md
           test -f docs/architecture/PHASE-2-CORE-SERVICES.md
           test -f docs/architecture/PHASE-3-5-GATEWAY-GOVERNANCE-PORTAL.md
+          test -f docs/architecture/PHASE-6-500-USER-SCENARIO.md
+          test -f docs/architecture/FINAL-ARCHITECTURE.md
           test -f docs/research/AKANA-SOA-RESEARCH.md
           test -f docs/governance/POLICIES.md
           test -f docs/governance/AKANA-MAPPING.md
+          test -f docs/presentation/SOAForge-ISO810-Akana-SOA.md
+          test -f docs/DELIVERY-CHECKLIST.md
+          test -f docs/release/ACADEMIC-RELEASE.md
+          test -f infrastructure/500-user-topology.md
           test -f src/Gateway/SOAForge.Gateway.csproj
           test -f src/Portal/package.json
           test -f tests/README.md

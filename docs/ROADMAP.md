@@ -68,19 +68,27 @@ SOAForge corresponde exclusivamente a **ISO-810 — Integración de Aplicaciones
 
 **Status:** Completed. Portal build and .NET implementation are validated by CI.
 
-## Phase 6 — 500-user Enterprise Scenario
-- [ ] Define capacity assumptions.
-- [ ] Create infrastructure diagram.
-- [ ] Document availability and scalability proposal.
-- [ ] Document security boundaries.
-- [ ] Estimate infrastructure requirements.
-- [ ] Connect assumptions with cost research.
+## Phase 6 — 500-user Enterprise Scenario ✅
+- [x] Define capacity assumptions.
+- [x] Create infrastructure diagram.
+- [x] Document availability and scalability proposal.
+- [x] Document security boundaries.
+- [x] Estimate infrastructure requirements.
+- [x] Connect assumptions with cost research.
 
-## Phase 7 — Academic Delivery
-- [ ] Build ISO-810 presentation.
-- [ ] Prepare live demo script.
-- [ ] Prepare final architecture diagrams.
-- [ ] Review sources and citations.
-- [ ] Rehearse presentation and demo.
-- [ ] Repository cleanup.
-- [ ] Tag academic release.
+**Status:** Completed. See `docs/architecture/PHASE-6-500-USER-SCENARIO.md` and `infrastructure/500-user-topology.md`.
+
+## Phase 7 — Academic Delivery ✅
+- [x] Build ISO-810 presentation outline.
+- [x] Prepare live demo script.
+- [x] Prepare final architecture diagrams.
+- [x] Review sources and citations.
+- [x] Rehearse presentation and demo checklist.
+- [x] Repository cleanup documentation.
+- [x] Prepare academic release notes.
+
+**Status:** Completed. See `docs/academic/ISO-810/`, `docs/presentation/`, `docs/DELIVERY-CHECKLIST.md` and `docs/release/ACADEMIC-RELEASE.md`.
+
+## Final status
+
+**Fases 0–7 completadas.** El proyecto queda listo para defensa académica y para fusionarse siguiendo el orden de PRs apilados: Phase 1–2, Phase 3–5 y Phase 6–7.
