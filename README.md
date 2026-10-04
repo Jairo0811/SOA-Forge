@@ -42,13 +42,28 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 | 🧩 Primer parcial | **Akana SOA** |
 | 📁 Entrega | **Investigación + presentación + demo técnica** |
 
-### 👥 Equipo
+### 👥 Equipo académico original
 
-| Integrante | Matrícula |
+| 👤 Integrante | 🆔 Matrícula |
 |---|---|
-| **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
-| **Francis Jairo Matias Rosario** | **A00115261** |
-| **Jorge Alexander Minier Terrero** | **A00105678** |
+| 👨🏻‍💻 **Jorge Alexander Minier Terrero** | **A00105678** |
+| 👨🏻‍💻 **Francis Jairo Matias Rosario** | **A00115261** |
+| 👨🏻‍💻 **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
+
+---
+
+## 🧭 Continuidad académica
+
+### 👨‍🏫 Continuidad por profesor
+
+El profesor **Juan Pablo Valdez Reyes** impartió previamente **Desarrollo de Software con Tecnología Open Source 2 (ISO-715)**, asignatura asociada a [**RentCarRD**](https://github.com/Jairo0811/RentCarRD), durante **Mayo - Agosto 2026**. En el período siguiente imparte **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)**, correspondiente a **SOAForge**, durante **Septiembre - Diciembre 2026**.
+
+| Orden | Asignatura | Proyecto | Período |
+|---:|---|---|---|
+| 1 | Desarrollo de Software con Tecnología Open Source 2 (ISO-715) | [**RentCarRD**](https://github.com/Jairo0811/RentCarRD) | Mayo - Agosto 2026 |
+| 2 | Integración de Aplicaciones con Tecnología Propietaria (ISO-810) | **SOAForge** | Septiembre - Diciembre 2026 |
+
+La relación es **docente, formativa y cronológica**. No implica dependencia técnica entre RentCarRD y SOAForge.
 
 ---
 
@@ -104,36 +119,67 @@ El flujo conserva las validaciones remotas: OrderService consulta CustomerServic
 
 ## 🧱 Stack implementado
 
-### Core services
+### ⚙️ Core services
 
-- **.NET 10 / ASP.NET Core**
-- **C#**
-- **OpenAPI**
-- CustomerService, OrderService y PaymentService
-- xUnit
+<p>
+  <img src="https://skillicons.dev/icons?i=dotnet,cs" alt=".NET y C#" />
+  <img src="https://img.shields.io/badge/OpenAPI-Contratos-85EA2D?style=flat-square&logo=swagger&logoColor=black" alt="OpenAPI" />
+  <img src="https://img.shields.io/badge/xUnit-Testing-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="xUnit" />
+</p>
 
-### Gateway, Security & Governance
+- **.NET 10 / ASP.NET Core**;
+- **C#**;
+- **OpenAPI**;
+- CustomerService, OrderService y PaymentService;
+- xUnit.
 
-- **YARP 2.3.0**
-- JWT Bearer
-- authorization policy `gateway`
-- 60 requests/minuto como policy académica inicial
-- rutas `/api/v1/*`
-- health agregado
-- correlation y trace IDs
-- structured request logs
-- métricas ligeras del Gateway
+### 🔐 Gateway, seguridad y gobierno
 
-### Service Portal
+<p>
+  <img src="https://img.shields.io/badge/YARP-2.3.0-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="YARP 2.3.0" />
+  <img src="https://img.shields.io/badge/JWT-Bearer-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT Bearer" />
+  <img src="https://img.shields.io/badge/API%20Gateway-Governance-0F766E?style=flat-square" alt="API Gateway y Governance" />
+</p>
 
-- **React 19**
-- **TypeScript**
-- **Vite**
-- catálogo de servicios
-- health/status
-- endpoint documentation
-- métricas
-- token JWT de demostración
+- **YARP 2.3.0**;
+- JWT Bearer;
+- authorization policy `gateway`;
+- 60 requests/minuto como policy académica inicial;
+- rutas `/api/v1/*`;
+- health agregado;
+- correlation y trace IDs;
+- structured request logs;
+- métricas ligeras del Gateway.
+
+### 🎨 Service Portal
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,ts,vite" alt="React, TypeScript y Vite" />
+  <img src="https://img.shields.io/badge/Font%20Awesome-538DD7?style=flat-square&logo=fontawesome&logoColor=white" alt="Font Awesome" />
+</p>
+
+- **React 19**;
+- **TypeScript**;
+- **Vite**;
+- catálogo de servicios;
+- health/status;
+- endpoint documentation;
+- métricas;
+- token JWT de demostración.
+
+### 🧪 Calidad y CI
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions" alt="Git, GitHub y GitHub Actions" />
+  <img src="https://img.shields.io/badge/xUnit-Tests-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="xUnit tests" />
+</p>
+
+- Git / GitHub;
+- GitHub Actions;
+- restore y build de la solución .NET;
+- pruebas automatizadas;
+- smoke runtime a través del Gateway;
+- build del portal.
 
 ---
 
