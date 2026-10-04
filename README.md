@@ -5,7 +5,7 @@
 <br/>
 
 <img src="https://img.shields.io/badge/Primer%20Parcial-Akana%20SOA-7C3AED?style=for-the-badge" alt="Primer parcial: Akana SOA" />
-<img src="https://img.shields.io/badge/Fases%200--5-Completadas-22C55E?style=for-the-badge" alt="Fases 0 a 5 completadas" />
+<img src="https://img.shields.io/badge/Fases%200--7-Completadas-22C55E?style=for-the-badge" alt="Fases 0 a 7 completadas" />
 
 <br/><br/>
 
@@ -25,7 +25,7 @@
 
 **SOAForge** es el proyecto académico del primer parcial de **Integración de Aplicaciones con Tecnología Propietaria (ISO-810)** en UNAPEC.
 
-El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación académica de la plataforma y una demo propia llamada **NovaCommerce** para ilustrar contratos, integración service-to-service, gateway, policies, seguridad, catálogo y observabilidad.
+El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investigación académica de la plataforma y una demo propia llamada **NovaCommerce** para ilustrar contratos, integración service-to-service, gateway, policies, seguridad, catálogo, observabilidad y un escenario empresarial para **500 usuarios**.
 
 > SOAForge no ejecuta ni clona Akana. La correspondencia con Akana es conceptual y está documentada explícitamente.
 
@@ -42,9 +42,9 @@ El caso asignado al grupo es **Akana SOA**. El repositorio conserva la investiga
 | 🧩 Primer parcial | **Akana SOA** |
 | 📁 Entrega | **Investigación + presentación + demo técnica** |
 
-### 👥 Equipo académico original
+### 👥 Equipo
 
-| 👤 Integrante | 🆔 Matrícula |
+| Integrante | Matrícula |
 |---|---|
 | **Enmanueli Alfonso Rondon Marrero** | **A00115575** |
 | **Francis Jairo Matias Rosario** | **A00115261** |
@@ -70,7 +70,9 @@ SOAForge demuestra:
 - structured logging;
 - correlation ID y trace ID;
 - métricas operativas;
-- portal de servicios React/TypeScript.
+- portal de servicios React/TypeScript;
+- escenario empresarial documentado para 500 usuarios;
+- presentación, guion de demo y checklist de entrega.
 
 ---
 
@@ -96,7 +98,7 @@ SOAForge demuestra:
           :5101              :5102              :5103
 ```
 
-El flujo conserva las validaciones remotas implementadas en Phase 2: OrderService consulta CustomerService y PaymentService consulta OrderService.
+El flujo conserva las validaciones remotas: OrderService consulta CustomerService y PaymentService consulta OrderService.
 
 ---
 
@@ -165,20 +167,6 @@ Estas credenciales y la signing key del repositorio son exclusivamente para ejec
 
 ---
 
-## 🔐 Governance
-
-Las reglas vigentes están en [**docs/governance/POLICIES.md**](docs/governance/POLICIES.md).
-
-La relación conceptual entre la demo y Akana está en [**docs/governance/AKANA-MAPPING.md**](docs/governance/AKANA-MAPPING.md).
-
----
-
-## 🔬 Investigación
-
-La investigación completa del primer parcial está en [**docs/research/AKANA-SOA-RESEARCH.md**](docs/research/AKANA-SOA-RESEARCH.md) y cubre los 11 puntos solicitados: SOA, BPM, historia y evolución, características, módulos, componentes, competidores, infraestructura para 500 usuarios, elementos usuales, costos y aspectos adicionales.
-
----
-
 ## 🗺️ Roadmap
 
 | Fase | Alcance | Estado |
@@ -189,32 +177,33 @@ La investigación completa del primer parcial está en [**docs/research/AKANA-SO
 | 3 | API Gateway y comunicación SOA | ✅ Completada |
 | 4 | Seguridad, políticas y governance | ✅ Completada |
 | 5 | Portal de servicios y observabilidad | ✅ Completada |
-| 6 | Escenario empresarial para 500 usuarios | ▶️ Siguiente |
-| 7 | Presentación, demo y cierre académico | ⏳ |
-
-El detalle se mantiene en [**docs/ROADMAP.md**](docs/ROADMAP.md).
+| 6 | Escenario empresarial para 500 usuarios | ✅ Completada |
+| 7 | Presentación, demo y cierre académico | ✅ Completada |
 
 ---
 
 ## 📊 Estado actual
 
-**Fases 0–5: ✅ completadas en la rama de implementación.**
+**Fases 0–7: ✅ completadas en la rama de entrega final.**
 
-El quality gate de GitHub Actions valida documentación, solución .NET 10, pruebas automatizadas y build del portal. La próxima etapa es **Phase 6 — 500-user Enterprise Scenario**.
+GitHub Actions valida documentación, solución .NET 10, pruebas automatizadas, smoke runtime a través del Gateway y build del portal.
 
 ---
 
-## 📚 Documentación
+## 📚 Documentación principal
 
 - [Roadmap](docs/ROADMAP.md)
 - [Akana SOA Research](docs/research/AKANA-SOA-RESEARCH.md)
 - [Architecture](docs/architecture/)
 - [Phases 3–5](docs/architecture/PHASE-3-5-GATEWAY-GOVERNANCE-PORTAL.md)
+- [500-user Enterprise Scenario](docs/architecture/PHASE-6-500-USER-SCENARIO.md)
+- [Final Architecture](docs/architecture/FINAL-ARCHITECTURE.md)
 - [Governance Policies](docs/governance/POLICIES.md)
 - [Akana Mapping](docs/governance/AKANA-MAPPING.md)
-- [Gateway](src/Gateway/README.md)
-- [Portal](src/Portal/README.md)
-- [Tests](tests/README.md)
+- [Demo Script](docs/academic/ISO-810/DEMO-SCRIPT.md)
+- [Presentation Outline](docs/academic/ISO-810/PRESENTATION-OUTLINE.md)
+- [Delivery Checklist](docs/DELIVERY-CHECKLIST.md)
+- [Release Notes](docs/release/ACADEMIC-RELEASE.md)
 
 ---
 
