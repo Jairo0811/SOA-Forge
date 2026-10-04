@@ -1,12 +1,17 @@
 # Tests
 
-La estrategia de pruebas se incorporará con la Fase 1.
+Phase 2 incorpora pruebas automatizadas en:
 
-Alcance previsto:
+`tests/SOAForge.Core.Tests/`
 
-- Unit tests
-- Integration tests
-- API contract tests
-- Gateway routing tests
-- Architecture tests
-- End-to-end smoke tests
+La suite valida el comportamiento base de los repositorios de Customer, Order y Payment.
+
+## Ejecutar
+
+```bash
+dotnet test SOAForge.slnx --configuration Release
+```
+
+GitHub Actions ejecuta restore, build y tests en cada pull request hacia `main`.
+
+Las pruebas de gateway, seguridad y end-to-end se ampliarán en fases posteriores.

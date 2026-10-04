@@ -1,0 +1,39 @@
+@customer = http://localhost:5101
+@order = http://localhost:5102
+@payment = http://localhost:5103
+
+### Health — Customer
+GET {{customer}}/health
+
+### List seeded customers
+GET {{customer}}/api/customers
+
+### Create customer
+POST {{customer}}/api/customers
+Content-Type: application/json
+
+{
+  "name": "Nova Customer",
+  "email": "nova@example.com"
+}
+
+### Create order using seeded customer Ana
+POST {{order}}/api/orders
+Content-Type: application/json
+
+{
+  "customerId": "11111111-1111-1111-1111-111111111111",
+  "total": 2450.00
+}
+
+### List orders
+GET {{order}}/api/orders
+
+### Payment requires an OrderId returned by POST /api/orders
+# POST {{payment}}/api/payments
+# Content-Type: application/json
+#
+# {
+#   "orderId": "PUT-ORDER-ID-HERE",
+#   "amount": 2450.00
+# }

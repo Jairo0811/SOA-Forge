@@ -28,14 +28,16 @@ SOAForge corresponde exclusivamente a **ISO-810 — Integración de Aplicaciones
 
 **Status:** Completed. See `docs/research/AKANA-SOA-RESEARCH.md`.
 
-## Phase 2 — Core Services Demo
-- [ ] Create .NET solution.
-- [ ] Implement Customer Service.
-- [ ] Implement Order Service.
-- [ ] Implement Payment Service.
-- [ ] Add OpenAPI documentation.
-- [ ] Add service-to-service integration.
-- [ ] Add automated tests.
+## Phase 2 — Core Services Demo 🟡
+- [x] Create .NET solution.
+- [x] Implement Customer Service.
+- [x] Implement Order Service.
+- [x] Implement Payment Service.
+- [x] Add OpenAPI documentation.
+- [x] Add service-to-service integration.
+- [x] Add automated tests.
+
+**Status:** Implementation complete; CI validation pending before final closure.
 
 ## Phase 3 — API Gateway and SOA Integration
 - [ ] Centralize routing through the gateway.
