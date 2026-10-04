@@ -1,10 +1,10 @@
 <div align="center">
 
 <img src="assets/soaforge-logo.png" alt="SOAForge — Enterprise Application Integration Lab" width="100%" />
-
+<img src="https://img.shields.io/badge/UNAPEC-ISO--810-003B70?style=for-the-badge" alt="UNAPEC ISO-810" />
 <br/>
 
-<img src="https://img.shields.io/badge/UNAPEC-ISO--810-003B70?style=for-the-badge" alt="UNAPEC ISO-810" />
+
 <img src="https://img.shields.io/badge/Primer%20Parcial-Akana%20SOA-7C3AED?style=for-the-badge" alt="Primer parcial: Akana SOA" />
 <img src="https://img.shields.io/badge/Fase%200-Completada-22C55E?style=for-the-badge" alt="Fase 0 completada" />
 
