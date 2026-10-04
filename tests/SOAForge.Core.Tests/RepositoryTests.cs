@@ -1,6 +1,7 @@
 using SOAForge.CustomerService;
 using SOAForge.OrderService;
 using SOAForge.PaymentService;
+using Xunit;
 
 namespace SOAForge.Core.Tests;
 
